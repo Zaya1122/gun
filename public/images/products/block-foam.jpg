@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html class="js" lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="https://kudo-paint.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="57x57" href="/kudo-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/kudo-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/kudo-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/kudo-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/kudo-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/kudo-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/kudo-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/kudo-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/kudo-180x180.png">
+<link rel="icon" type="image/png" href="/kudo-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/kudo-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/kudo-96x96.png" sizes="96x96">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f9f9f9">
+<meta name="msapplication-TileColor" content="#f9f9f9">
+<meta name="msapplication-TileImage" content="/kudo-144x144.png">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="theme-color" content="#f9f9f9">
+
+<!-- This site is optimized with the Yoast SEO plugin v5.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Page not found KUDO</title>
+<meta name="robots" content="noindex,follow"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="Page not found KUDO" />
+<meta property="og:site_name" content="KUDO" />
+<meta property="og:image" content="https://kudo-paint.ru/wp-content/uploads/kudo-for-facebook-1024-630.jpg" />
+<meta property="og:image:secure_url" content="https://kudo-paint.ru/wp-content/uploads/kudo-for-facebook-1024-630.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Page not found KUDO" />
+<meta name="twitter:image" content="https://kudo-paint.ru/wp-content/uploads/kudo-for-facebook-1024-630.jpg" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/kudo-paint.com\/","name":"KUDO","potentialAction":{"@type":"SearchAction","target":"https:\/\/kudo-paint.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":false,"sameAs":["https:\/\/www.facebook.com\/kudopaints","https:\/\/www.instagram.com\/kudoofficial\/","https:\/\/www.youtube.com\/channel\/UClH67Po6AauwsEUqwCG0nKA\/videos"],"@id":"#organization","name":"KUDO \u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0438 \u0434\u0435\u043a\u043e\u0440\u0430\u0442\u0438\u0432\u043d\u044b\u0435 \u0430\u044d\u0440\u043e\u0437\u043e\u043b\u044c\u043d\u044b\u0435 \u043b\u0430\u043a\u0438, \u043a\u0440\u0430\u0441\u043a\u0438 \u0438 \u044d\u043c\u0430\u043b\u0438","logo":"https:\/\/kudo-paint.ru\/wp-content\/uploads\/kudo700-700.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='kudo-google-css'  href='https://fonts.googleapis.com/css?family=Roboto+Condensed%3A400%2C700&#038;subset=cyrillic' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-font-awesome-css'  href='https://kudo-paint.com/wp-content/themes/kudo/inc/fonts/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-app-css'  href='https://kudo-paint.com/wp-content/themes/kudo/css/app-001.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-easyzoom-css'  href='https://kudo-paint.com/wp-content/themes/kudo/css/easyzoom.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-woocommerce-overwrite-css'  href='https://kudo-paint.com/wp-content/themes/kudo/css/woocommerce-overwrite-001.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-swiper-css'  href='https://kudo-paint.com/wp-content/themes/kudo/css/idangerous.swiper.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-owl-css'  href='https://kudo-paint.com/wp-content/themes/kudo/css/owl.carousel.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-owl-theme-css'  href='https://kudo-paint.com/wp-content/themes/kudo/css/owl.theme.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-offcanvas-css'  href='https://kudo-paint.com/wp-content/themes/kudo/css/offcanvas.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-nanoscroller-css'  href='https://kudo-paint.com/wp-content/themes/kudo/css/nanoscroller.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-styles-css'  href='https://kudo-paint.com/wp-content/themes/kudo/css/styles-011.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-responsive-css'  href='https://kudo-paint.com/wp-content/themes/kudo/css/responsive-009.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kudo-default-style-css'  href='https://kudo-paint.com/wp-content/themes/kudo/style.css' type='text/css' media='all' />
+
+<script type='text/javascript' src='https://kudo-paint.com/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+</head>
+<body class="error404 yith-wcan-free">
+<div id="st-container" class="st-container">
+<div class="st-pusher">
+<div class="st-pusher-after"></div>   
+<div class="st-content">
+
+<div id="page">
+<div class="top-headers-wrapper">
+<div id="topkudopg" class="topkudopg_class" style="display: none;">
+  <div class="row">
+    <div class="large-12 medium-6 columns">
+      <p class="topkudopg_class_p">Other projects:</p>
+    </div>
+    <div class="large-4 medium-6 columns">
+      <div class="asanim">
+        <a href="http://www.rus-ta.ru/eng/" rel="noopener">
+            <picture>
+                <source type="image/webp" srcset="/wp-content/uploads/webp/rusta_eng.webp">
+                <source type="image/png" srcset="/wp-content/uploads/logos/rusta_eng.png">
+                <img width="570" height="150" src="/wp-content/uploads/logos/rusta_eng.png" class="attachment-shop_single size-shop_single wp-post-image" alt="RUSTA manufacturer of polyurethane foam, adhesives, sealants">
+            </picture>
+        </a>
+      </div>
+    </div>
+    <div class="large-4 medium-6 columns">
+      <div class="asanim">
+        <a href="http://eng.elf-filling.ru/" rel="noopener">
+            <picture>
+                <source type="image/webp" srcset="/wp-content/uploads/webp/elf_eng.webp">
+                <source type="image/png" srcset="/wp-content/uploads/logos/elf_eng.png">
+                <img width="570" height="150" src="/wp-content/uploads/logos/elf_eng.png" class="attachment-shop_single size-shop_single wp-post-image" alt="Elf filling manufacturer of aerosol paint">
+            </picture>
+        </a>
+      </div>
+    </div>
+    <div class="large-4 medium-6 columns">
+      <div class="asanim">
+        <a href="https://www.youtube.com/channel/UClH67Po6AauwsEUqwCG0nKA/" rel="noopener">
+            <picture>
+                <source type="image/webp" srcset="/wp-content/uploads/webp/youtube_eng.webp">
+                <source type="image/png" srcset="/wp-content/uploads/logos/youtube_eng.png">
+                <img width="570" height="150" src="/wp-content/uploads/logos/youtube_engg.png" class="attachment-shop_single size-shop_single wp-post-image" alt="YouTube KUDO">
+            </picture>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div id="site-top-bar">
+  <div class="row">
+    <div class="large-4 columns">
+
+    </div>
+    <!-- .large-4 .columns -->
+    <div class="large-8 columns">
+      <div class="site-social-icons-wrapper">
+        <div class="site-social-icons">
+
+          <ul>
+            <li><a class="cons-link-first show-hide-btn">Technical aerosols KUDO<sup>®</sup><i aria-label="Оther categories" class="fa fa-angle-down"></i></a></li>
+            <li><a class="cons-link" href="/blog/topic/news/" style="padding-right:20px;">News</a></li>
+            <li><a class="cons-vk" aria-label="vk" rel="noopener" target="_blank" href="https://vk.com/kudopaint"><i class="fa fa-vk"></i></a></li>
+            <li><a class="cons-youtube" aria-label="youtube" rel="noopener" target="_blank" href="https://www.youtube.com/channel/UClH67Po6AauwsEUqwCG0nKA/videos"><i class="fa fa-youtube-play"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- .large-8 .columns -->
+  </div>
+  <!-- .row -->
+</div>
+<div class="kudogllines"></div>
+<header id="masthead" class="site-header header-default" role="banner">
+<div class="row">		
+<div class="large-12 columns">
+<div class="site-header-wrapper">
+<div class="site-branding gotop">
+<a href="/" rel="home"><img class="site-logo" src="/wp-content/uploads/kudo-logo.svg" alt="KUDO" /></a>
+</div><!-- .site-branding -->
+
+<div id="site-menu">
+<nav id="site-navigation" class="main-navigation" role="navigation"> 
+<ul id="menu-main">
+<li class="menu-item menu-item-menu-burger"><a class="menu-burger-m" href="/products/"><span aria-label="Каталог продукции"></span></a>
+<ul class="sub-menu splsub">
+    <li class="menu-item specialfnc menu-item-48961"><a class="mrfrt" href="/products/tag/arte/"><span class="textyntxt">A</span>RTE</a></li>
+    <li class="menu-item specialfnc menu-item-48962"><a class="mrfrt" href="/products/tag/industry/"><span class="textyntxti">I</span>NDUSTRY</a></li>
+    <li class="menu-item specialfnc menu-item-48963"><a class="mrfrt" href="/products/tag/kraft/"><span class="textyntxt">K</span>RAFT</a></li>
+    <li class="menu-item specialfnc menu-item-48965"><a class="mrfrt" href="/products/tag/creation/"><span class="textyntxt">C</span>REATION</a></li>
+    <li class="menu-item specialfnc menu-item-48966"><a class="mrfrt" href="/products/tag/proff/"><span class="textyntxt">P</span>ROFF</a></li>
+    <li class="menu-item specialfnc menu-item-48967"><a class="mrfrt" href="/products/tag/home/"><span class="textyntxt">H</span>OME</a></li>
+</ul>
+</li>
+<li class="megamenu-2-col menu-item menu-item-has-children menu-item-5179 first-menu-mega-box"><a href="/products/category/spray-paint/">Spray paint</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-has-children"><a href="/products/category/spray-paint/">All products</a>
+	<ul class="sub-menu">
+	    <li class="menu-item"><a href="/products/category/spray-paint/pre-treatment/">Pre treatment</a></li>
+	    <li class="menu-item"><a href="/products/category/spray-paint/primers/">Primers</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/enamels-paints/">Enamels/Paints</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/varnish/">Varnish</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/creation/">Creation</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/special-coatings/">Special coatings</a></li>
+	</ul>
+</li>
+
+</ul>
+</li>
+<li class="megamenu-2-col menu-item menu-item-has-children first-menu-mega-box"><a href="/products/category/pu-foam/">Pu-foam</a>
+  <ul class="sub-menu">
+    <li class="menu-item menu-item-has-children">
+      <a href="/products/category/pu-foam/">All products</a>
+      <ul class="sub-menu">
+        <li class="menu-item"><a href="/products/category/pu-foam/professional/">Professional</a></li>
+        <li class="menu-item"><a href="/products/category/pu-foam/home/">Home</a></li>
+        <li class="menu-item"><a href="/products/category/pu-foam/insulation-pu/">Insulation PU</a></li>
+      </ul>
+    </li>
+
+
+  </ul>
+</li>
+<li class="megamenu-2-col menu-item menu-item-has-children first-menu-mega-box"><a href="/products/category/adhesives-and-sealants/">Adhesives and sealants</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-has-children"><a href="/products/category/adhesives-and-sealants/">All products</a>
+	<ul class="sub-menu">
+		<li class="menu-item"><a href="/products/category/adhesives-and-sealants/adhesives/">Adhesives</a></li>
+		<li class="menu-item"><a href="/products/category/adhesives-and-sealants/sealants/">Sealants</a></li>
+		<li class="menu-item"><a href="/handle-all/">Handle All</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li class="megamenu-2-col menu-item menu-item-has-children first-menu-mega-box"><a href="/products/category/household/">Household</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-has-children"><a href="/products/category/household/">All products</a>
+	<ul class="sub-menu">
+		<li class="menu-item"><a href="/products/category/household/for-clothes-and-shoes/">For clothes and shoes</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+
+
+<li class="menu-item menu-item-has-children menu-item-4911"><a href="/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li class="menu-item"><a href="/about-us/">About KUDO<sup>®</sup></a></li>
+	<li class="menu-item"><a href="/private-label/">Private label</a></li>
+	<li class="menu-item"><a href="/social-environmental-responsibility/">Social Responsibility</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-item-2825"><a href="/for-dealers/">For dealers</a>
+<ul class="sub-menu">
+	<li class="menu-item"><a href="/for-dealers/#reklamniemateriali">Promotional materials</a></li>
+	<li class="menu-item"><a href="/for-dealers/">Catalogs</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-item-2000"><a href="/support/">Support</a>
+	<ul class="sub-menu">
+	<li class="menu-item"><a href="/blog/appropriate-material-combinations/">Material Combinations</a></li>
+    <li class="menu-item"><a href="/sealant-for-bathroom/">Sealant for bathroom</a></li>
+    <li class="menu-item"><a href="/aerosol-spray-paints/">About spray paints</a></li>
+    <li class="menu-item"><a href="/blog/topic/advice/">Expert advice</a></li>
+    <li class="menu-item"><a href="/faq/">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-item-2808"><a href="/contacts/">Contacts</a>
+<ul class="sub-menu">
+    <li class="menu-item"><a href="/about-us/">About KUDO<sup>®</sup></a></li>
+    <li class="menu-item"><a href="/contacts/">Contacts</a></li>
+</ul>
+</li>
+</ul>  
+</nav><!-- #site-navigation -->               
+<div class="site-tools">
+<ul>
+<li class="mobile-yan-menu-button"><a href="javascript:void(0)" class="toggle-mnu hidden-lg"><span></span></a></li>
+<li class="search-button"><a href="javascript:void(0)" aria-label="Поиск"><i class="fa fa-icon-search"></i></a></li>
+</ul>	
+</div>
+<div class="site-search">
+<div class="aws-container widget woocommerce widget_product_search" data-url="https://kudo-paint.com/wp-admin/admin-ajax.php" data-siteurl="https://kudo-paint.com" data-show-loader="true" data-show-more="true" data-show-page="true" data-use-analytics="false" data-min-chars="2"><form class="aws-search-form woocommerce-product-search" action="https://kudo-paint.com" method="get" role="search" ><input type="search" id="woocommerce-product-search-field" class="search-field" placeholder="Product Search" value="" name="s" title="Enter the product name or SKU"><input type="submit" value="Search" style="z-index: 1;"><input type="hidden" name="post_type" value="product"><input type="hidden" name="type_aws" value="true"></form></div>
+
+</div><!-- .site-search -->
+</div><!-- #site-menu -->
+<div class="clearfix"></div>
+</div><!-- .site-header-wrapper -->
+</div><!-- .columns -->
+</div><!-- .row -->
+</header><!-- #masthead -->	
+</div>
+	<div id="primary" class="content-area">
+
+        <div class="row">	
+            <div class="large-10 large-centered columns">    
+                <div id="content" class="site-content" role="main">
+                
+                    <section class="error-404 not-found">
+                        <header class="page-header">
+                            <div class="error-banner">
+								<img id="error-404" class="error" alt="404-banner"  width="354" height="155"  src="https://kudo-paint.com/wp-content/themes/kudo/images/error_404.png" data-interchange="[https://kudo-paint.com/wp-content/themes/kudo/images/error_404.png, (default)], [https://kudo-paint.com/wp-content/themes/kudo/images/error_404_retina.png, (retina)]">
+                            </div>
+                            <h1 class="page-title">Ошибка 404. Страница не найдена</h1>
+                            <style type="text/css">
+         .board{
+         width: 399px;
+         background-color: #ffffff;
+         border: 1px solid #dddddd;
+         position: relative;
+         margin-left: 0;
+         margin-top: 0;
+         }
+         #board{
+         height: 399px;
+         border-bottom: 0px;
+         margin-left: 285px;
+         width: 399px;
+         }
+         #apple{
+         position: absolute;
+         background-color: red;
+         height: 7px;
+         width: 7px;
+         overflow: hidden;
+         }
+         .snake{
+         position: absolute;
+         top: 200px;
+         left: 200px;
+         background-color: black;
+         height: 7px;
+         width: 7px;
+         overflow: hidden;
+         }
+         .snake2{
+         position: absolute;
+         top: -10px;
+         left: -10px;
+         background-color: black;
+         height: 7px;
+         width: 7px;
+         overflow: hidden;
+         }
+         #score{
+         height: 60px;
+         margin-top: 0px;
+         margin-left: 285px;
+         width: 399px;
+         }
+         #cscore{
+         color: #262628;
+         padding-top: 13px;
+         float: left;
+         width: 25%;
+         font-size: 30px;
+         }
+         #notice{
+         position: absolute;
+         top: 1em;
+         left: 1em;
+         right: 1em;
+         text-align: center;
+         font-size: 150%;
+         }
+         #i2{
+         position: absolute;
+         bottom: 1em;
+         left: 1em;
+         right: 1em;
+         text-align: center;
+         font-size: 95%;
+         }
+         button#slow, button#medium, button#fast {
+    padding: 8px 15px;
+    margin: 10px 0px;
+}
+.error-404 .search-form {
+    padding: 6px 0 20px;
+}
+button:hover {background-color:#262628}
+
+@media only screen and (max-width: 64em){.nevidno, .board {visibility:hidden;max-height:0px}}
+      </style>
+                        </header><!-- .page-header -->
+        
+                        <div class="page-content">
+                            <p>Воспользуйтесь поиском</p>
+        
+                            <form role="search" method="get" class="search-form" action="https://kudo-paint.com/">    
+    <div>
+        <input type="search" class="search-field" id="s" placeholder="Search by publication..." title="Enter product name or part number" name="s">
+        <input type="submit" class="search-submit" value="Search">
+    </div>
+</form>
+<div class="wpb_wrapper nevidno" style="padding-bottom:70px">
+<script type="text/javascript">
+
+         function cbsnake(){
+            this.jump = 8;
+            this.sos = 7;
+            this.sofb = 400;
+            this.daway = this.sofb - this.jump;
+            this.correct = new Array();
+            this.correct[0] = 0;
+            while(this.correct[this.correct.length -1] != this.daway){
+               this.correct[this.correct.length] = this.correct[this.correct.length -1]+this.jump
+            }
+            this.zero = 0;
+            var gameboard = ' <div class="board" id="board"> <div id="i2">Это очень простая KUDO змейка. Пожалуйста выберете уровень сложности! После этого, стрелками на клавиатуре выберете начальное направление движения и съешьте как можно больше зеленых яблок!</div> </div><div class="board" id="score"> <span id="cscore">0</span> <span id="buttons"> <button type="knopka" id="slow" onClick="snake.slow()">Низкий</button> <button type="knopka" id="medium"  onClick="snake.medium()">Средний</button> <button type="knopka" id="fast"  onClick="snake.fast()">Быстрый</button> </span></div>';
+            document.write(gameboard);
+         }
+         
+            cbsnake.prototype.setup = function(setspeed){
+               var thisObj = this;
+               this.score = 0;
+               this.sdir = 'none';
+               this.sdirb = 'none'; 
+               this.sdirp = 'none';
+               this.ctop = new Array();
+               this.cleft = new Array();
+               this.ctop[0] = 200;
+               this.ctop[1] = -8;
+               this.cleft[0] = 200;
+               this.cleft[1] = -8;
+               this.atop = 0;
+               this.aleft = 0;
+               this.speed = setspeed;
+               document.getElementById('board').innerHTML = '<div id="apple"></div><div id="snake0" class="snake"></div><div id="snake1" class="snake"></div>';
+               this.moveapple();
+               this.stopgame = false;
+               setTimeout(function(){ thisObj.msnake() },this.speed);
+               document.onkeydown = function(e){ return thisObj.snakedir(e); };
+            }
+            cbsnake.prototype.slow = function(){
+               this.setup(100);
+               this.buttons('true');
+               document.getElementById('slow').blur();
+            }
+            cbsnake.prototype.medium = function(){
+               this.setup(70);
+               this.buttons('true');
+               document.getElementById('medium').blur();
+            }
+            cbsnake.prototype.fast = function(){
+               this.setup(30);
+               this.buttons('true');
+               document.getElementById('fast').blur();
+            }
+            cbsnake.prototype.rannum = function(num1,num2){
+               num1 = parseInt(num1);
+               num2 = parseInt(num2);
+               var generator = Math.random()*(Math.abs(num2-num1));
+               generator = Math.round(num1+generator);
+               return generator;
+            }
+            cbsnake.prototype.moveapple = function(){
+               var usethis = false;
+               while(!usethis){
+                  this.atop = this.correct[this.rannum(0,this.correct.length-1)];
+                  this.aleft = this.correct[this.rannum(0,this.correct.length-1)];
+                  if(this.numInArray(this.ctop,this.cleft,this.atop,this.aleft) == 0){
+                     usethis = true;
+                  }         
+               }
+               document.getElementById('apple').style.top = this.atop+"px";
+               document.getElementById('apple').style.left = this.aleft+"px";
+            }
+            cbsnake.prototype.snakedir = function(e){  
+                  if(!e){
+                     e = window.event;
+                  }
+                  switch(e.keyCode){
+                     case 38:
+                        if(this.sdir != 'down' && this.sdirp != 'down'){
+                           this.sdirb = 'up';
+                           this.sdirp = 'up';
+                        }
+                        break;
+                     case 40:
+                        if(this.sdir != 'up' && this.sdirp != 'up'){
+                        this.sdirb = 'down';
+                        this.sdirp = 'down';
+                        }
+                        break;
+                     case 37:
+                        if(this.sdir != 'right' && this.sdirp != 'right'){
+                        this.sdirb = 'left';
+                        this.sdirp = 'left';
+                        }
+                        break;
+                     case 39:
+                        if(this.sdir != 'left' && this.sdirp != 'left'){
+                        this.sdirb = 'right';
+                        this.sdirp = 'right';
+                        }
+                        break;
+                     case 32:
+                        if(this.sdir == 'none' && this.sdirp != 'none'){
+                           this.sdirb = this.sdirp;
+                           this.sdirp = 'none';
+                        }
+                        else{
+                        this.sdirp = this.sdir;
+                        this.sdirb = 'none';
+                        }
+                        break;
+                  }
+                  return this.stopgame;
+                  
+            }
+            cbsnake.prototype.msnake = function(){
+               if(this.stopgame === false){
+                  if(this.sdir != 'none'){
+                     this.moveall();
+                  }
+                  var thisObj = this;
+                  switch(this.sdir){
+                        case 'up':
+                           this.ctop[0] = this.ctop[0] - this.jump;
+                           document.getElementById('snake0').style.top = this.ctop[0]+"px";
+                           if((this.ctop[0] == this.zero && this.sdirb == 'up') || this.ctop[0] < this.zero){
+                              this.gover();
+                           }
+                           break;
+                        case 'down':
+                           this.ctop[0] = this.ctop[0] + this.jump;
+                           document.getElementById('snake0').style.top = this.ctop[0]+"px";
+                           if((this.ctop[0] == this.daway && this.sdirb == 'down') || this.ctop[0] > this.daway){
+                              this.gover();
+                           }
+                           break;
+                        case 'left':
+                           this.cleft[0] = this.cleft[0] - this.jump;
+                           document.getElementById('snake0').style.left = this.cleft[0]+"px";
+                           if((this.cleft[0] == this.zero && this.sdirb == 'left') || this.cleft[0] < this.zero){
+                              this.gover();
+                           }
+                           break;
+                        case 'right':
+                           this.cleft[0] = this.cleft[0] + this.jump;
+                           document.getElementById('snake0').style.left = this.cleft[0]+"px";
+                           if((this.cleft[0] == this.daway && this.sdirb == 'right') || this.cleft[0] > this.daway){
+                              this.gover();
+                           }
+                           break;
+                  }
+                  if(this.sdir != 'none'){
+                     this.hitself();
+                     this.happle();
+                  }
+               this.sdir = this.sdirb
+               setTimeout(function(){ thisObj.msnake() },this.speed);
+               }
+            }
+            cbsnake.prototype.gover = function(){
+               if(!this.stopgame){
+                  this.stopgame = true;
+                  var inner = document.getElementById('board').innerHTML;
+                  document.getElementById('board').innerHTML = inner+'<div id="notice">Конец игры! Вы набрали '+this.score+'</div><div id="i2">Можете попробовать еще раз! Пожалуйста, выберите уровень сложности</div>';
+                  document.getElementById('apple').style.backgroundColor = '#27ce01';
+                  for(i=0;i<this.cleft.length;i++){
+                     document.getElementById('snake'+i).style.backgroundColor = '#e20613';
+                  }
+                  this.buttons('');
+               }
+            }
+            cbsnake.prototype.happle = function(){
+               if(this.atop == this.ctop[0] && this.aleft == this.cleft[0]){
+                  this.score++;
+                  document.getElementById('cscore').innerHTML = this.score;
+                  this.moveapple();
+                  this.addsnake();
+               }
+            }
+            cbsnake.prototype.addsnake = function(){
+            var newsnake = document.createElement('div');
+            var newid = 'snake'+this.cleft.length;
+            newsnake.setAttribute('id',newid);
+            newsnake.style.position = 'absolute';
+            newsnake.style.top = '-10px';
+            newsnake.style.left = '-10px';
+            newsnake.style.display = 'none';
+            newsnake.style.backgroundColor = 'black';
+            newsnake.style.height = '7px';
+            newsnake.style.width = '7px';
+            newsnake.style.overflow = 'hidden';
+            document.getElementById('board').appendChild(newsnake);
+            this.cleft[this.cleft.length] = -10;
+            this.ctop[this.ctop.length] = -10;
+            }
+            cbsnake.prototype.moveall = function(){
+               var i = this.ctop.length - 1;
+               while(i != 0){
+                  document.getElementById('snake'+i).style.top = document.getElementById('snake'+(i-1)).style.top;
+                  document.getElementById('snake'+i).style.left = document.getElementById('snake'+(i-1)).style.left;
+                  document.getElementById('snake'+i).style.display = 'block';
+                  this.ctop[i] = this.ctop[i-1];
+                  this.cleft[i] = this.cleft[i-1];
+                  i = i - 1;
+               }
+            }
+            cbsnake.prototype.numInArray = function(array,array2,value,value2){
+               var n = 0;
+               for (var i=0; i < array.length; i++) {
+                  if (array[i] === value && array2[i] === value2) {
+                     n++;
+                  }
+               }
+               return n;
+            }
+            cbsnake.prototype.hitself = function(){
+               if(this.numInArray(this.ctop,this.cleft,this.ctop[0],this.cleft[0]) > 1){
+                  this.gover();
+               }
+            }
+            cbsnake.prototype.buttons = function(setto){
+               document.getElementById('slow').disabled = setto;
+               document.getElementById('medium').disabled = setto;
+               document.getElementById('fast').disabled = setto;
+            }
+      </script>
+<script type="text/javascript">
+var snake = new cbsnake();
+</script>
+</div>
+
+
+                        </div><!-- .page-content -->
+                    </section><!-- .error-404 -->
+                    
+                </div><!-- #content -->
+            </div><!-- .large-12 .columns -->                
+        </div><!-- .row -->
+             
+    </div><!-- #primary -->
+
+<footer id="site-footer" role="contentinfo">
+  <div class="trigger-footer-widget-area">
+    <span class="trigger-footer-widget-icon"></span>
+  </div>
+  <div class="site-footer-widget-area">
+    <div class="row borderbottomrow">
+      <div class="large-6 medium-6 small-12 columns">
+        <aside class="widget widget_text">
+          <div class="footer-logo-box"><a href="/" rel="home"><img class="site-logo" src="/wp-content/uploads/kudo-logo.svg" title="Aerosol paints, varnishes, pu-foam, sealants and adhesives KUDO" alt="KUDO"></a></div>
+          <div class="textwidget">
+            <ul class="ulinlinefooter">
+                <li><a class="newfootera" href="/about-us/">About Us</a></li>
+                <li><a class="newfootera" href="/support/">Support</a></li>
+                <li><a class="newfootera" href="/blog/topic/news/">News</a></li>
+                <li><a class="newfootera" href="/for-dealers/">For dealers</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <div class="large-6 medium-6 small-12 columns">
+     <aside class="widget widget_text">
+
+     <div class="textwidget textalignrightfooter">
+             <ul class="ulinlinefooter footertelfn">
+                <li><a href="tel:+74957373842">+7 (495) 737-38-42</a></li>
+                <li><a href="tel:+74991671530">+7 (499) 167-15-30</a></li>
+            </ul>
+            <p class="footer-time-work">We work MON-FRI with&nbsp;10:00&nbsp;to&nbsp;18:30</p>
+            <ul class="ulinlinefooter">
+                <li><a class="newfootera redrightfooter" href="/private-label/"><i class="fa fa-location"></i>&nbsp;&nbsp;Private label</a></li>
+                <li><a class="newfootera redrightfooter" href="/contacts/"><i class="fa fa-location"></i>&nbsp;&nbsp;Moscow office</a></li>
+            </ul>
+      </div>
+      </aside>
+      </div>
+
+
+    </div>
+    <div class="row">
+      <div class="large-3 medium-3 small-12 columns">
+        <aside class="widget widget_text">
+          <div class="textwidget footer-mobile-center-margen">
+            <ul>
+                <li class="footli"><img width="35" height="35" src="/wp-content/uploads/logos/dis1.svg" class="foter-series-icon" alt="Spray paint"><a href="/products/category/spray-paint/">Spray paint</a></li>
+                <li class="footli foter-series-margin-bottom"><span></span></li>
+                <li class="footli"><img width="35" height="35" src="/wp-content/uploads/logos/km3.svg" class="foter-series-icon" alt="Polyurethane Foam"><a href="/products/category/pu-foam/" rel="noopener">Polyurethane Foam</a></li>
+                <li class="footli foter-series-margin-bottom"><span></span></li>
+                <li class="footli"><img width="35" height="35" src="/wp-content/uploads/logos/klei_kudo_on.svg" class="foter-series-icon" alt="Adhesives and sealants"><a href="/products/category/adhesives-and-sealants/" rel="noopener">Adhesives and sealants</a></li>
+                <li class="footli foter-series-margin-bottom"><span></span></li>
+                <li class="footli"><img width="35" height="35" src="/wp-content/uploads/logos/bit1.svg" class="foter-series-icon" alt="Household"><a href="/products/category/household/">Household</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <div class="large-9 medium-9 small-12 columns">
+        <aside id="text-4" class="widget widget_text widget-text-right-text">
+            <div class="textwidget">
+            <div class="tagcloud">
+              <p><a href="/products/category/spray-paint/">Spray paint</a><a href="/products/category/spray-paint/pre-treatment/">Pre treatment</a><a href="/products/category/spray-paint/primers/">Primers</a><a href="/products/category/spray-paint/enamels-paints/">Enamels/Paints</a><a href="/products/category/spray-paint/varnish/">Varnish</a><a href="/products/category/spray-paint/creation/">Creation</a><a href="/products?filter_osnova=acrylic">Acrylic enamel</a><a href="/products?filter_osnova=alkyd">Alkyd enamel</a><a href="/products/tag/ral/">RAL colour standard</a><a href="/products?filter_osnova=styrenated-alkyd">Styrenated alkyd</a><a href="/products/category/spray-paint/special-coatings/">Special coatings</a><a href="/products/category/pu-foam/professional/">PU foam - Professional</a><a href="/products/category/pu-foam/home/">PU foam - Home</a><a href="/products/category/adhesives-and-sealants/adhesives/">Adhesives</a><a href="/products/category/adhesives-and-sealants/sealants/">Sealants</a><a href="/products?filter_adhesivesealant-base=acrylic">Acrylic sealants</a><a href="/products?filter_adhesivesealant-base=silicone">Silicone sealants</a><a href="/products?filter_adhesivesealant-base=hybrid-polymer">Hybrid polymer</a><a href="/sealant-for-bathroom/">Sealant for bathroom</a><a href="/blog/topic/advice/">Expert advice</a><a href="/blog/appropriate-material-combinations/">Material Combinations</a><a href="/products/category/household/for-clothes-and-shoes/">For clothes and shoes</a><a href="/products/">All Products</a><a href="/products/?swoof=1&orderby=date">New Products</a></p>
+              </div>
+            <div class="textwidget">
+	                <ul class="footer-serii-color-ul"><li class="serii-color-1"><a class="footer-serii-color-a" href="/products/tag/arte/"><span class="footer-txt-redqv">A</span>RTE</a></li><li class="serii-color-2"><a class="footer-serii-color-a" href="/products/tag/industry/"><span class="footer-txt-redqvi">I</span>NDUSTRY</a></li><li class="serii-color-6"><a class="footer-serii-color-a" href="/products/tag/kraft/"><span class="footer-txt-redqv">K</span>RAFT</a></li><li class="serii-color-4"><a class="footer-serii-color-a" href="/products/tag/creation/"><span class="footer-txt-redqv">C</span>REATE</a></li><li class="serii-color-7"><a class="footer-serii-color-a" href="/products/tag/proff/"><span class="footer-txt-redqv">P</span>ROFF</a></li><li class="serii-color-5"><a class="footer-serii-color-a" href="/products/tag/home/"><span class="footer-txt-redqv">H</span>OME</a></li></ul>
+	        </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer-copyright-area">
+    <div class="row">
+      <div class="large-1 large-push-0 columns">
+        <p class="copyright_change_language"><span>EN</span> <a href="https://kudo-paint.ru" rel="noopener">RU</a></p>  
+      </div>
+      <div class="large-5 large-push-0 columns">
+        <p class="copyright_text"><span class="padding-right-copyright">©2024. Technical aerosols KUDO<sup>®</sup></span><span class="icons-copyright-block"><a class="footer-icons-vk" aria-label="vk" rel="noopener" target="_blank" href="https://vk.com/kudopaint"><i class="fa fa-vk footer-icons-size"></i></a><a class="footer-icons-youtube" aria-label="youtube" rel="noopener" target="_blank" href="https://www.youtube.com/channel/UClH67Po6AauwsEUqwCG0nKA/videos"><i class="fa fa-youtube-play footer-icons-size"></i></a></span><span class="copyright-small-text">Legal documents	- <a href="/terms-of-use/">Terms of use</a></span></p>    
+      </div>
+      <div class="large-6 large-push-0 columns ftrlef">
+        <a href="https://kudo-purfoam.ru/" aria-label="Pu foam KUDO" rel="noopener"><img width="65" height="41" alt="Pu foam KUDO RUS" src="/wp-content/uploads/logos/kpfs.svg" class="partners"></a>
+        <a href="https://kudo-bond.ru/" aria-label="Foam and sealant adhesives KUDO" rel="noopener"><img width="65" height="41" alt="Foam and sealant adhesives KUDO" src="/wp-content/uploads/logos/kbs.svg" class="partners"></a>
+        <a href="https://kerry.ru/" aria-label="Kerry" rel="noopener"><img width="65" height="41" alt="Autochemicals Kerry" src="/wp-content/uploads/logos/ksn.svg" class="partners"></a>
+        <a href="https://rush-paint.com/" aria-label="RUSH" rel="noopener"><img width="65" height="41" alt="RUSH" src="/wp-content/uploads/logos/rs.svg" class="partners"></a>
+        <a href="https://axiompro.ru/" aria-label="AXIOM" rel="noopener"><img width="65" height="41" alt="Autochemicals AXIOM" src="/wp-content/uploads/logos/axs.svg" class="partners"></a>
+        <a href="https://elf-filling.ru/" aria-label="Elf filling" rel="noopener"><img width="95" height="60" alt="Aerosol manufacturer ELF FILLING" src="/wp-content/uploads/logos/els.svg" class="partnerslast"></a>
+      </div>
+
+    </div>
+    <!-- .row -->
+  </div>
+</footer>
+
+</div><!-- #page -->
+</div><!-- /st-content -->
+</div><!-- /st-pusher -->
+<nav class="st-menu slide-from-left">
+<div class="nano">
+<div class="nano-content">
+<div class="kudoglline"></div>
+<div id="mobiles-menu-offcanvas" class="offcanvas-left-content">
+<nav id="mobile-main-navigation" class="mobile-navigation" role="navigation">
+<ul id="menu-main-1">
+<li class="menu-item"><a href="/products/">All products</a></li>
+<li class="megamenu-2-col menu-item menu-item-has-children menu-item-5179 first-menu-mega-box"><a href="/products/category/spray-paint/">Spray paint</a>
+<ul class="sub-menu">
+	   <li class="menu-item"><a href="/products/category/spray-paint/">All products</a></li>
+	    <li class="menu-item"><a href="/products/category/spray-paint/pre-treatment/">Pre treatment</a></li>
+	    <li class="menu-item"><a href="/products/category/spray-paint/primers/">Primers</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/enamels-paints/">Enamels/Paints</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/varnish/">Varnish</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/creation/">Creation</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/special-coatings/">Special coatings</a></li>
+
+</ul>
+</li>
+<li class="megamenu-2-col menu-item menu-item-has-children first-menu-mega-box"><a href="/products/category/pu-foam/">Pu-foam</a>
+  <ul class="sub-menu">
+      <li class="menu-item"><a href="/products/category/pu-foam/">All products</a></li>
+        <li class="menu-item"><a href="/products/category/pu-foam/professional/">Professional</a></li>
+        <li class="menu-item"><a href="/products/category/pu-foam/home/">Home</a></li>
+        <li class="menu-item"><a href="/products/category/pu-foam/insulation-pu/">Insulation PU</a></li>
+  </ul>
+</li>
+<li class="megamenu-2-col menu-item menu-item-has-children first-menu-mega-box"><a href="/products/category/adhesives-and-sealants/">Adhesives and sealants</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-has-children"><a href="/products/category/adhesives-and-sealants/">All products</a>
+	<li class="menu-item"><a href="/products/category/adhesives-and-sealants/adhesives/">Adhesives</a></li>
+	<li class="menu-item"><a href="/products/category/adhesives-and-sealants/sealants/">Sealants</a></li>
+	<li class="menu-item"><a href="/handle-all/">Handle All</a></li>
+</ul>
+</li>
+
+
+
+<li class="megamenu-2-col menu-item menu-item-has-children first-menu-mega-box"><a href="/products/category/household/">Household</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-has-children"><a href="/products/category/household/">All products</a></li>
+	<li class="menu-item"><a href="/products/category/household/for-clothes-and-shoes/">For clothes and shoes</a></li>
+</ul>
+</li>
+
+
+<li class="menu-item menu-item-has-children menu-item-4911"><a href="/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li class="menu-item"><a href="/about-us/">About KUDO<sup>®</sup></a></li>
+	<li class="menu-item"><a href="/private-label/">Private label</a></li>
+	<li class="menu-item"><a href="/social-environmental-responsibility/">Social Responsibility</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-item-2825"><a href="/for-dealers/">For dealers</a>
+<ul class="sub-menu">
+	<li class="menu-item"><a href="/for-dealers/#reklamniemateriali">Promotional materials</a></li>
+	<li class="menu-item"><a href="/for-dealers/">Catalogs</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-item-2000"><a href="/support/">Support</a>
+	<ul class="sub-menu">
+	<li class="menu-item"><a href="/blog/appropriate-material-combinations/">Material Combinations</a></li>
+    <li class="menu-item"><a href="/sealant-for-bathroom/">Sealant for bathroom</a></li>
+    <li class="menu-item"><a href="/aerosol-spray-paints/">About spray paints</a></li>
+    <li class="menu-item"><a href="/blog/topic/advice/">Expert advice</a></li>
+    <li class="menu-item"><a href="/faq/">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-item-2808"><a href="/contacts/">Contacts</a>
+<ul class="sub-menu">
+    <li class="menu-item"><a href="/about-us/">About KUDO<sup>®</sup></a></li>
+    <li class="menu-item"><a href="/contacts/">Contacts</a></li>
+</ul>
+</li>
+</ul>      
+    
+    
+</nav>
+ 
+<div class="mobile-socials">
+<div class="site-social-micons"></div>
+</div>
+</div>
+<div id="filters-offcanvas" class="offcanvas-left-content wpb_widgetised_column">
+</div></div></div></nav>
+</div><!-- /st-container -->
+
+
+<div class="site-header-sticky"><div class="row"><div class="large-12 columns"><div class="site-header-sticky-inner"><div class="site-branding">
+<a href="/" rel="home"><img class="site-logo" src="/wp-content/uploads/kudo-logo.svg" title="Автомобильные и декоративные аэрозольные лаки, краски и эмали KUDO" alt="KUDO" /></a>
+</div><!-- .site-branding -->
+
+<div>
+<nav id="site-navigation-ski" class="main-navigation" role="navigation"> 
+
+<ul id="menu-main-2">
+<li class="megamenu-2-col menu-item menu-item-has-children menu-item-5179 first-menu-mega-box"><a href="/products/category/spray-paint/">Spray paint</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-has-children"><a href="/products/category/spray-paint/">All products</a>
+	<ul class="sub-menu">
+	    <li class="menu-item"><a href="/products/category/spray-paint/pre-treatment/">Pre treatment</a></li>
+	    <li class="menu-item"><a href="/products/category/spray-paint/primers/">Primers</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/enamels-paints/">Enamels/Paints</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/varnish/">Varnish</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/creation/">Creation</a></li>
+		<li class="menu-item"><a href="/products/category/spray-paint/special-coatings/">Special coatings</a></li>
+	</ul>
+</li>
+
+</ul>
+</li>
+<li class="megamenu-2-col menu-item menu-item-has-children first-menu-mega-box"><a href="/products/category/pu-foam/">Pu-foam</a>
+  <ul class="sub-menu">
+    <li class="menu-item menu-item-has-children">
+      <a href="/products/category/pu-foam/">All products</a>
+      <ul class="sub-menu">
+        <li class="menu-item"><a href="/products/category/pu-foam/professional/">Professional</a></li>
+        <li class="menu-item"><a href="/products/category/pu-foam/home/">Home</a></li>
+        <li class="menu-item"><a href="/products/category/pu-foam/insulation-pu/">Insulation PU</a></li>
+      </ul>
+    </li>
+
+
+  </ul>
+</li>
+<li class="megamenu-2-col menu-item menu-item-has-children first-menu-mega-box"><a href="/products/category/adhesives-and-sealants/">Adhesives and sealants</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-has-children"><a href="/products/category/adhesives-and-sealants/">All products</a>
+	<ul class="sub-menu">
+		<li class="menu-item"><a href="/products/category/adhesives-and-sealants/adhesives/">Adhesives</a></li>
+		<li class="menu-item"><a href="/products/category/adhesives-and-sealants/sealants/">Sealants</a></li>
+		<li class="menu-item"><a href="/handle-all/">Handle All</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li class="megamenu-2-col menu-item menu-item-has-children first-menu-mega-box"><a href="/products/category/household/">Household</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-has-children"><a href="/products/category/household/">All products</a>
+	<ul class="sub-menu">
+		<li class="menu-item"><a href="/products/category/household/for-clothes-and-shoes/">For clothes and shoes</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+
+
+<li class="menu-item menu-item-has-children menu-item-4911"><a href="/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li class="menu-item"><a href="/about-us/">About KUDO<sup>®</sup></a></li>
+	<li class="menu-item"><a href="/private-label/">Private label</a></li>
+	<li class="menu-item"><a href="/social-environmental-responsibility/">Social Responsibility</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-item-2825"><a href="/for-dealers/">For dealers</a>
+<ul class="sub-menu">
+	<li class="menu-item"><a href="/for-dealers/#reklamniemateriali">Promotional materials</a></li>
+	<li class="menu-item"><a href="/for-dealers/">Catalogs</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-item-2000"><a href="/support/">Support</a>
+	<ul class="sub-menu">
+	<li class="menu-item"><a href="/blog/appropriate-material-combinations/">Material Combinations</a></li>
+    <li class="menu-item"><a href="/sealant-for-bathroom/">Sealant for bathroom</a></li>
+    <li class="menu-item"><a href="/aerosol-spray-paints/">About spray paints</a></li>
+    <li class="menu-item"><a href="/blog/topic/advice/">Expert advice</a></li>
+    <li class="menu-item"><a href="/faq/">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-item-2808"><a href="/contacts/">Contacts</a>
+<ul class="sub-menu">
+    <li class="menu-item"><a href="/about-us/">About KUDO<sup>®</sup></a></li>
+    <li class="menu-item"><a href="/contacts/">Contacts</a></li>
+</ul>
+</li>
+</ul>   
+
+</nav><!-- #site-navigation -->                
+<div class="site-tools">
+<ul>
+<li class="search-button"><a style="color:#222222" href="javascript:void(0)" aria-label="Search"><i class="fa fa-icon-search"></i></a></li>
+</ul>	
+</div>
+</div><!-- #site-menu -->
+<div class="clearfix"></div>
+</div><!--.site-header-sticky-inner-->	
+</div><!-- .large-12-->
+</div><!--.row--> 
+</div><!-- .site-header-sticky -->
+<div id="aws-search-result-1" class="aws-search-result" style="display: none;"></div>
+<script type='text/javascript' src='//kudo-paint.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wp-content\/uploads\/2024\/06\/block-adhesive.png?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//kudo-paint.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js'></script>
+<script type='text/javascript' src='//kudo-paint.com/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wp-content\/uploads\/2024\/06\/block-adhesive.png?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//kudo-paint.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-includes/js/underscore.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-includes/js/wp-util.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//kudo-paint.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var yith_wccl_general = {"ajaxurl":"\/wp-content\/uploads\/2024\/06\/block-adhesive.png?wc-ajax=%%endpoint%%","cart_redirect":"","cart_url":"","view_cart":"View Cart","tooltip":"1","tooltip_pos":"top","tooltip_ani":"fade","description":"1","add_cart":"Add to cart","grey_out":"","image_hover":"","wrapper_container_shop":"li.product"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-content/plugins/yith-woocommerce-color-label-variations-premium/assets/js/yith-wccl.min.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-content/themes/kudo/js/common.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-content/themes/kudo/js/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-content/themes/kudo/js/jquery.fitvids.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-content/themes/kudo/js/idangerous.swiper.min.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-content/themes/kudo/js/owl.carousel.min.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-content/themes/kudo/js/jquery.nanoscroller.min.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-content/themes/kudo/js/easyzoom.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-content/themes/kudo/js/youtubenew-004.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-content/themes/kudo/js/scripts-001.js'></script>
+<script type='text/javascript' src='https://kudo-paint.com/wp-content/themes/kudo/js/cookienotice.js'></script>
+
+<div id="cookieNotice" class="cookie-notice" role="dialog" aria-live="polite" aria-label="Уведомление о cookie" hidden>
+  <div class="cookie-notice__inner">
+    <div class="cookie-notice__text">
+      Мы используем файлы cookie для работы сайта и улучшения сервиса. Продолжая использовать сайт, вы соглашаетесь с их использованием.
+      <a href="/terms-of-use/" rel="nofollow">Публичная оферта</a>
+      и
+      <a href="/terms-of-use/" rel="nofollow">Политика обработки персональных данных</a>.
+    </div>
+
+    <div class="cookie-notice__actions">
+      <button type="button" id="cookieAccept" class="cookie-notice__btn">Принять</button>
+    </div>
+  </div>
+</div>
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(87978996, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/87978996" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+</body>
+</html>
