@@ -10,7 +10,7 @@ import { PageLoader } from "@/components/common/Loader";
 import type { Product } from "@/graphql/ecommerce/queries/product";
 
 const MOCK_PRODUCTS: Product[] = [
-  { _id: "foam", name: "ХӨӨС", unitPrice: 150000, attachment: { url: "/images/products/foam.jpg" } },
+  { _id: "foam", name: "ХӨӨС", unitPrice: 29700, attachment: { url: "/images/products/foam.jpg" } },
   { _id: "mako2", name: "МАКО 2 ОНГОЙЛТЫН ТҮГЖЭЭ", unitPrice: 85000, attachment: { url: "/images/products/mako2.jpg" } },
   { _id: "kinlong", name: "КИНЛОНГ ТҮГЖЭЭ", unitPrice: 95000, attachment: { url: "/images/products/kinlong.jpg" } },
   { _id: "amalgaa", name: "ХУВАНЦАР АМАЛГАА", unitPrice: 120000, attachment: { url: "/images/products/amalgaa.jpg" } },
