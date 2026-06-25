@@ -6,7 +6,7 @@ import { Link } from "@/i18n/routing";
 import { ProductCard } from "@/components/product/ProductCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { PageLoader } from "@/components/common/Loader";
+import { Textarea } from "@/components/ui/textarea";
 import Image from "@/components/common/Image";
 import type { Product } from "@/graphql/ecommerce/queries/product";
 
@@ -15,13 +15,6 @@ const FEATURED_PRODUCTS: Product[] = [
   { _id: "khoosnii-buu", name: "ХӨӨСНИЙ БУУ", unitPrice: 75000, attachment: { url: "/images/products/foam-gun.jpg" } },
   { _id: "mako2", name: "МАКО 2 ОНГОЙЛТЫН ТҮГЖЭЭ", unitPrice: 85000, attachment: { url: "/images/products/mako2.jpg" } },
   { _id: "tavtsan-40", name: "ХУВАНЦАР ТАВЦАН 40СМ", unitPrice: 180000, attachment: { url: "/images/products/tavtsan.jpg" } },
-];
-
-const BEST_SELLERS: Product[] = [
-  { _id: "suulgalt-khoos", name: "СУУЛГАЛТЫН ХӨӨС", unitPrice: 29700, attachment: { url: "/images/products/foam.jpg" } },
-  { _id: "kinlong", name: "КИНЛОНГ ТҮГЖЭЭ", unitPrice: 95000, attachment: { url: "/images/products/kinlong.jpg" } },
-  { _id: "amalgaa-60", name: "ХУВАНЦАР АМАЛГАА 60СМ", unitPrice: 120000, attachment: { url: "/images/products/amalgaa.jpg" } },
-  { _id: "us-uur-inside", name: "УС УУР ЧИЙГ ТУСГААРЛАГЧ INSIDE", unitPrice: 180000, attachment: { url: "/images/products/us-uur.jpg" } },
 ];
 
 const CATEGORIES = [
@@ -167,55 +160,7 @@ export default function HomePage() {
         </div>
       </motion.section>
 
-      {/* Promo banner */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-80px" }}
-        variants={sectionVariants}
-        className="mx-auto w-full max-w-[1440px] px-10 pb-[120px]"
-      >
-        <div className="relative flex min-h-[360px] items-center overflow-hidden bg-muted">
-          <Image src="/images/hero.jpg" alt="Promo" fill className="object-cover" />
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 flex w-full flex-col items-start justify-between gap-8 px-10 py-12 md:flex-row md:items-center">
-            <div className="text-white">
-              <p className="mb-2 text-[12px] uppercase tracking-[0.2em]">Хязгааргүй чанар</p>
-              <h2 className="text-[32px] font-normal md:text-[40px]">Бүтээгдэхүүний багц аваарай</h2>
-              <p className="mt-2 max-w-md text-[14px] opacity-90">
-                Хөөс, түгжээ, тавцан, амалгаа нэг дороос. Цонхны засвар, суурилуулалтад шаардлагатай бүх материал.
-              </p>
-            </div>
-            <Button
-              asChild
-              className="shrink-0 bg-white px-8 py-4 text-foreground hover:bg-white/90 text-[13px] uppercase tracking-wider"
-            >
-              <Link href="/products">{t("home.shopNow")}</Link>
-            </Button>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Best sellers */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-80px" }}
-        variants={sectionVariants}
-        className="mx-auto w-full max-w-[1440px] px-10 pb-[120px]"
-      >
-        <div className="mb-8 flex items-end justify-between">
-          <h2 className="text-[28px] font-normal">{t("home.bestSellers")}</h2>
-          <Link href="/products" className="text-[13px] underline">{t("home.viewAll")}</Link>
-        </div>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {BEST_SELLERS.map((product, i) => (
-            <ProductCard key={product._id} product={product} index={i} />
-          ))}
-        </div>
-      </motion.section>
-
-      {/* Newsletter */}
+      {/* Quote request */}
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -227,11 +172,19 @@ export default function HomePage() {
           <h2 className="text-[24px] font-normal">{t("home.newsletter")}</h2>
           <p className="mx-auto mt-3 max-w-md text-[13px] text-muted-foreground">{t("home.newsletterText")}</p>
           <form
-            className="mx-auto mt-6 flex max-w-lg flex-col gap-3 sm:flex-row"
+            className="mx-auto mt-6 flex max-w-xl flex-col gap-4 text-left"
             onSubmit={(e) => e.preventDefault()}
           >
-            <Input type="email" placeholder="Имэйл хаяг" className="flex-1" />
-            <Button type="submit" className="text-[13px] uppercase tracking-wider">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <Input type="text" placeholder="Нэр" />
+              <Input type="tel" placeholder="Утас" />
+            </div>
+            <Input type="email" placeholder="Имэйл (заавал биш)" />
+            <Textarea
+              placeholder="Төслийн тайлбар, тоо хэмжээ, хэмжээ гэх мэт..."
+              className="min-h-[120px]"
+            />
+            <Button type="submit" className="self-center text-[13px] uppercase tracking-wider">
               {t("home.subscribe")}
             </Button>
           </form>
