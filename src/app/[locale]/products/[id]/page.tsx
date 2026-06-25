@@ -14,6 +14,16 @@ import { formatPrice } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Image from "@/components/common/Image";
 
+const PRODUCT_OPTIONS = [
+  "ХӨӨС",
+  "МАКО 2 ОНГОЙЛТЫН ТҮГЖЭЭ",
+  "КИНЛОНГ ТҮГЖЭЭ",
+  "ХУВАНЦАР АМАЛГАА",
+  "ХУВАНЦАР ТАВЦАН",
+  "УС УУР ЧИЙГ ТУСГААРЛАГЧ",
+  "EPDM РЕЗИН",
+];
+
 export default function ProductDetailPage({
   params,
 }: {
@@ -23,6 +33,7 @@ export default function ProductDetailPage({
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
+  const [selectedOptions, setSelectedOptions] = useState<Record<string, string>>({});
 
   const { id: productId } = params as unknown as { id: string };
 
@@ -154,6 +165,34 @@ export default function ProductDetailPage({
             >
               +
             </button>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <p className="text-[11px] uppercase tracking-wider text-muted-foreground">Сонголтууд</p>
+            <div className="flex flex-wrap gap-2">
+              {PRODUCT_OPTIONS.map((option) => {
+                const isSelected = selectedOptions[product._id] === option;
+                return (
+                  <button
+                    key={option}
+                    type="button"
+                    onClick={() =>
+                      setSelectedOptions((prev) => ({
+                        ...prev,
+                        [product._id]: isSelected ? "" : option,
+                      }))
+                    }
+                    className={`border px-4 py-2 text-[12px] uppercase tracking-wider transition-colors duration-200 ${
+                      isSelected
+                        ? "border-foreground bg-foreground text-background"
+                        : "border-border bg-background text-foreground hover:bg-muted"
+                    }`}
+                  >
+                    {option}
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           <div className="flex flex-col gap-3">
