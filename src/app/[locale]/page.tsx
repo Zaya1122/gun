@@ -1,53 +1,43 @@
-import { getTranslations } from "next-intl/server";
+"use client";
+
+import { useTranslations } from "next-intl";
+import { useQuery } from "@apollo/client/react";
 import { Link } from "@/i18n/routing";
-import { getServerApolloClient } from "@/lib/apollo/server-client";
 import {
   POSC_PRODUCTS,
   POSC_PRODUCT_CATEGORIES,
+  type Product,
+  type ProductCategory,
   type PoscProductsData,
   type PoscProductCategoriesData,
 } from "@/graphql/ecommerce/queries/product";
 import { ProductCard } from "@/components/product/ProductCard";
+import { PageLoader } from "@/components/common/Loader";
 import Image from "@/components/common/Image";
 
-export default async function HomePage() {
-  const t = await getTranslations();
-  const client = await getServerApolloClient();
+export default function HomePage() {
+  const t = useTranslations();
 
-  const [{ data: productData }, { data: categoryData }] = await Promise.all([
-    client.query<PoscProductsData>({
-      query: POSC_PRODUCTS,
-      variables: { page: 1, perPage: 8 },
-      context: { fetchOptions: { next: { revalidate: 60 } } },
-    }),
-    client.query<PoscProductCategoriesData>({
-      query: POSC_PRODUCT_CATEGORIES,
-      variables: { perPage: 4 },
-      context: { fetchOptions: { next: { revalidate: 60 } } },
-    }),
-  ]);
+  const { data: productData, loading: productsLoading } = useQuery<PoscProductsData>(POSC_PRODUCTS, {
+    variables: { page: 1, perPage: 8 },
+  });
 
-  const products = productData?.poscProducts || [];
-  const categories = categoryData?.poscProductCategories || [];
+  const { data: categoryData, loading: categoriesLoading } = useQuery<PoscProductCategoriesData>(
+    POSC_PRODUCT_CATEGORIES,
+    { variables: { perPage: 4 } }
+  );
+
+  const products = (productData?.poscProducts || []) as Product[];
+  const categories = (categoryData?.poscProductCategories || []) as ProductCategory[];
 
   return (
     <div className="flex flex-col">
       <section className="relative h-[900px] w-full overflow-hidden">
-        <Image
-          src="/images/hero.jpg"
-          alt="GUN"
-          fill
-          className="object-cover"
-          priority
-        />
+        <Image src="/images/hero.jpg" alt="GUN" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-black/10" />
         <div className="absolute bottom-28 left-10 flex flex-col gap-3">
-          <p className="text-[13px] uppercase tracking-wider text-white">
-            {t("hero.label")}
-          </p>
-          <h1 className="text-[120px] font-light uppercase tracking-[12px] text-white">
-            GUN
-          </h1>
+          <p className="text-[13px] uppercase tracking-wider text-white">{t("hero.label")}</p>
+          <h1 className="text-[120px] font-light uppercase tracking-[12px] text-white">GUN</h1>
           <Link
             href="/products"
             className="mt-4 inline-flex border border-white px-6 py-3 text-[13px] uppercase tracking-wider text-white hover:bg-white hover:text-black"
@@ -59,25 +49,31 @@ export default async function HomePage() {
 
       <section className="mx-auto w-full max-w-[1440px] px-10 py-[120px]">
         <h2 className="mb-6 text-[28px] font-normal">{t("home.categories")}</h2>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {categories.map((cat) => (
-            <Link
-              key={cat._id}
-              href={`/products?category=${cat._id}`}
-              className="group relative aspect-[3/4] overflow-hidden"
-            >
-              <Image
-                src={cat.attachment?.url}
-                alt={cat.name || ""}
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-              />
-              <div className="absolute bottom-4 left-4 text-[13px] font-normal text-white drop-shadow">
-                {cat.name}
-              </div>
-            </Link>
-          ))}
-        </div>
+        {categoriesLoading ? (
+          <div className="flex h-64 items-center justify-center">
+            <PageLoader />
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {categories.map((cat) => (
+              <Link
+                key={cat._id}
+                href={`/products?category=${cat._id}`}
+                className="group relative aspect-[3/4] overflow-hidden"
+              >
+                <Image
+                  src={cat.attachment?.url}
+                  alt={cat.name || ""}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+                <div className="absolute bottom-4 left-4 text-[13px] font-normal text-white drop-shadow">
+                  {cat.name}
+                </div>
+              </Link>
+            ))}
+          </div>
+        )}
       </section>
 
       <section className="mx-auto w-full max-w-[1440px] px-10 py-[60px]">
@@ -87,11 +83,17 @@ export default async function HomePage() {
             {t("common.viewAll")}
           </Link>
         </div>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {products.slice(0, 4).map((product) => (
-            <ProductCard key={product._id} product={product} />
-          ))}
-        </div>
+        {productsLoading ? (
+          <div className="flex h-64 items-center justify-center">
+            <PageLoader />
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {products.slice(0, 4).map((product) => (
+              <ProductCard key={product._id} product={product} />
+            ))}
+          </div>
+        )}
       </section>
 
       <section className="bg-foreground py-[120px] text-background">
@@ -100,12 +102,8 @@ export default async function HomePage() {
           <div className="grid grid-cols-1 gap-3 lg:grid-cols-3">
             {[1, 2, 3].map((i) => (
               <div key={i} className="border border-white/30 p-6">
-                <p className="text-[15px] font-light leading-relaxed">
-                  &ldquo;{t(`testimonial.${i}.text`)}&rdquo;
-                </p>
-                <p className="mt-4 text-[13px] text-white/60">
-                  — {t(`testimonial.${i}.author`)}
-                </p>
+                <p className="text-[15px] font-light leading-relaxed">&ldquo;{t(`testimonial.${i}.text`)}&rdquo;</p>
+                <p className="mt-4 text-[13px] text-white/60">— {t(`testimonial.${i}.author`)}</p>
               </div>
             ))}
           </div>
@@ -136,12 +134,7 @@ export default async function HomePage() {
             </button>
           </form>
           <div className="relative aspect-[4/3] bg-muted">
-            <Image
-              src="/images/contact.jpg"
-              alt="Contact"
-              fill
-              className="object-cover"
-            />
+            <Image src="/images/contact.jpg" alt="Contact" fill className="object-cover" />
           </div>
         </div>
       </section>
