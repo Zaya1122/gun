@@ -2,41 +2,45 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { useQuery } from "@apollo/client/react";
-import {
-  POSC_PRODUCTS,
-  POSC_PRODUCT_CATEGORIES,
-  type Product,
-  type ProductCategory,
-  type PoscProductsData,
-  type PoscProductCategoriesData,
-} from "@/graphql/ecommerce/queries/product";
+import { Link } from "@/i18n/routing";
 import { ProductCard } from "@/components/product/ProductCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { PageLoader } from "@/components/common/Loader";
+import type { Product } from "@/graphql/ecommerce/queries/product";
+
+const MOCK_PRODUCTS: Product[] = [
+  { _id: "foam", name: "ХӨӨС", unitPrice: 150000, attachment: { url: "/images/products/foam.jpg" } },
+  { _id: "mako2", name: "МАКО 2 ОНГОЙЛТЫН ТҮГЖЭЭ", unitPrice: 85000, attachment: { url: "/images/products/mako2.jpg" } },
+  { _id: "kinlong", name: "КИНЛОНГ ТҮГЖЭЭ", unitPrice: 95000, attachment: { url: "/images/products/kinlong.jpg" } },
+  { _id: "amalgaa", name: "ХУВАНЦАР АМАЛГАА", unitPrice: 120000, attachment: { url: "/images/products/amalgaa.jpg" } },
+  { _id: "tavtsan", name: "ХУВАНЦАР ТАВЦАН", unitPrice: 180000, attachment: { url: "/images/products/tavtsan.jpg" } },
+  { _id: "us-uur", name: "УС УУР ЧИЙГ ТУСГААРЛАГЧ", unitPrice: 220000, attachment: { url: "/images/products/us-uur.jpg" } },
+  { _id: "epdm", name: "EPDM РЕЗИН", unitPrice: 65000, attachment: { url: "/images/products/epdm.jpg" } },
+];
+
+const CATEGORIES = ["Бүгд", "Түгжээ", "Хуванцар", "Ус чийг тусгаарлагч", "Резин"];
 
 export default function ProductsPage() {
   const t = useTranslations();
   const [searchValue, setSearchValue] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined);
+  const [selectedCategory, setSelectedCategory] = useState("Бүгд");
   const [page, setPage] = useState(1);
 
-  const { data, loading } = useQuery<PoscProductsData>(POSC_PRODUCTS, {
-    variables: {
-      categoryId: selectedCategory,
-      page,
-      perPage: 20,
-      searchValue: searchValue || undefined,
-    },
+  const filtered = MOCK_PRODUCTS.filter((p) => {
+    const matchesSearch = p.name?.toLowerCase().includes(searchValue.toLowerCase());
+    const matchesCategory =
+      selectedCategory === "Бүгд" ||
+      (selectedCategory === "Түгжээ" && p.name?.includes("ТҮГЖЭЭ")) ||
+      (selectedCategory === "Хуванцар" && p.name?.includes("ХУВАНЦАР")) ||
+      (selectedCategory === "Ус чийг тусгаарлагч" && p.name?.includes("УС")) ||
+      (selectedCategory === "Резин" && p.name?.includes("РЕЗИН"));
+    return matchesSearch && matchesCategory;
   });
 
-  const { data: categoryData } = useQuery<PoscProductCategoriesData>(POSC_PRODUCT_CATEGORIES, {
-    variables: { perPage: 50 },
-  });
-
-  const products = (data?.poscProducts || []) as Product[];
-  const categories = (categoryData?.poscProductCategories || []) as ProductCategory[];
+  const perPage = 20;
+  const paginated = filtered.slice((page - 1) * perPage, page * perPage);
+  const loading = false;
 
   return (
     <div className="mx-auto w-full max-w-[1440px] px-10 py-16">
@@ -52,23 +56,18 @@ export default function ProductsPage() {
           />
           <p className="mb-3 text-[11px] uppercase text-muted-foreground">{t("products.categories")}</p>
           <div className="flex flex-col gap-2">
-            <Button
-              variant={!selectedCategory ? "default" : "outline"}
-              size="sm"
-              onClick={() => setSelectedCategory(undefined)}
-              className="justify-start"
-            >
-              {t("products.all")}
-            </Button>
-            {categories.map((cat) => (
+            {CATEGORIES.map((cat) => (
               <Button
-                key={cat._id}
-                variant={selectedCategory === cat._id ? "default" : "outline"}
+                key={cat}
+                variant={selectedCategory === cat ? "default" : "outline"}
                 size="sm"
-                onClick={() => setSelectedCategory(cat._id)}
+                onClick={() => {
+                  setSelectedCategory(cat);
+                  setPage(1);
+                }}
                 className="justify-start"
               >
-                {cat.name}
+                {cat}
               </Button>
             ))}
           </div>
@@ -82,11 +81,11 @@ export default function ProductsPage() {
           ) : (
             <>
               <div className="mb-6 text-[13px] text-muted-foreground">
-                {products.length} {t("products.count")}
+                {filtered.length} {t("products.count")}
               </div>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {products.map((product) => (
-                  <ProductCard key={product._id} product={product} />
+                {paginated.map((product, i) => (
+                  <ProductCard key={product._id} product={product} index={i} />
                 ))}
               </div>
               <div className="mt-10 flex items-center justify-center gap-4">
@@ -103,7 +102,7 @@ export default function ProductsPage() {
                   variant="outline"
                   size="sm"
                   onClick={() => setPage((p) => p + 1)}
-                  disabled={products.length < 20}
+                  disabled={paginated.length < perPage}
                 >
                   {t("common.next")}
                 </Button>
