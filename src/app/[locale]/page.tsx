@@ -129,35 +129,6 @@ export default function HomePage() {
         whileInView="visible"
         viewport={{ once: true, margin: "-80px" }}
         variants={sectionVariants}
-        className="bg-foreground py-[120px] text-background"
-      >
-        <div className="mx-auto w-full max-w-[1440px] px-10">
-          <h2 className="mb-10 text-[28px] font-normal">{t("home.testimonials")}</h2>
-          <div className="grid grid-cols-1 gap-3 lg:grid-cols-3">
-            {[1, 2, 3].map((i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.35, delay: i * 0.05, ease: "easeOut" }}
-                className="border border-white/30 p-6 transition-colors duration-200 hover:bg-white/5"
-              >
-                <p className="text-[15px] font-light leading-relaxed">
-                  &ldquo;{t(`testimonial.${i}.text`)}&rdquo;
-                </p>
-                <p className="mt-4 text-[13px] text-white/60">— {t(`testimonial.${i}.author`)}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
-
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-80px" }}
-        variants={sectionVariants}
         className="mx-auto w-full max-w-[1440px] px-10 py-[120px]"
       >
         <h2 className="mb-10 text-[28px] font-normal">{t("home.contact")}</h2>
