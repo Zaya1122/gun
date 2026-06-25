@@ -13,7 +13,12 @@ import { Button } from "@/components/ui/button";
 import Image from "@/components/common/Image";
 
 const PRODUCT_OPTIONS = [
-  "ХӨӨС",
+  "СУУЛГАЛТЫН ХӨӨС",
+  "БЛОКНЫ ХӨӨС",
+  "ШҮРШДЭГ ХӨӨС",
+  "ХӨӨС ЦЭВЭРЛЭГЧ",
+  "ХӨӨСНИЙ БУУ",
+  "ХӨӨС ИДЭВХИЖҮҮЛЭГЧ",
   "МАКО 2 ОНГОЙЛТЫН ТҮГЖЭЭ",
   "КИНЛОНГ ТҮГЖЭЭ",
   "ХУВАНЦАР АМАЛГАА",
@@ -23,8 +28,12 @@ const PRODUCT_OPTIONS = [
 ];
 
 const MOCK_PRODUCTS: Record<string, { _id: string; name: string; unitPrice: number; description: string; attachment?: { url: string } }> = {
-  foam: { _id: "foam", name: "ХӨӨС", unitPrice: 29700, description: "Цонхны дулаан тусгаарлагч хөөс." },
-  "block-foam": { _id: "block-foam", name: "БЛОКНЫ ХӨӨС", unitPrice: 45000, description: "Блокон дулаан тусгаарлагч хөөс." },
+  "suulgalt-khoos": { _id: "suulgalt-khoos", name: "СУУЛГАЛТЫН ХӨӨС", unitPrice: 29700, description: "Цонхны суулгалтын дулаан тусгаарлагч хөөс." },
+  "block-khoos": { _id: "block-khoos", name: "БЛОКНЫ ХӨӨС", unitPrice: 45000, description: "Блокон дулаан тусгаарлагч хөөс." },
+  "shurdeg-khoos": { _id: "shurdeg-khoos", name: "ШҮРШДЭГ ХӨӨС", unitPrice: 52000, description: "Шүршдэг хөөс — хөндий зайг дулаан тусгаарлана." },
+  "khoos-tseverlegch": { _id: "khoos-tseverlegch", name: "ХӨӨС ЦЭВЭРЛЭГЧ", unitPrice: 18000, description: "Хөөс болон наалдсан бохирдлыг хялбар цэвэрлэнэ." },
+  "khoosnii-buu": { _id: "khoosnii-buu", name: "ХӨӨСНИЙ БУУ", unitPrice: 75000, description: "Мөнгөн ууттай хөөсний буу." },
+  "khoos-idewkhijulegch": { _id: "khoos-idewkhijulegch", name: "ХӨӨС ИДЭВХИЖҮҮЛЭГЧ", unitPrice: 12000, description: "Хөөс бэлтгэх, идэвхижүүлэх туслах бодис." },
   mako2: { _id: "mako2", name: "МАКО 2 ОНГОЙЛТЫН ТҮГЖЭЭ", unitPrice: 85000, description: "Мако брендын 2 онгойлтын түгжээ." },
   kinlong: { _id: "kinlong", name: "КИНЛОНГ ТҮГЖЭЭ", unitPrice: 95000, description: "Кинлонг брендын чанартай түгжээ." },
   amalgaa: { _id: "amalgaa", name: "ХУВАНЦАР АМАЛГАА", unitPrice: 120000, description: "Хуванцар цонхны амалгаа." },

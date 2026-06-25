@@ -10,8 +10,12 @@ import { PageLoader } from "@/components/common/Loader";
 import type { Product } from "@/graphql/ecommerce/queries/product";
 
 const MOCK_PRODUCTS: Product[] = [
-  { _id: "foam", name: "ХӨӨС", unitPrice: 29700, attachment: { url: "/images/products/foam.jpg" } },
-  { _id: "block-foam", name: "БЛОКНЫ ХӨӨС", unitPrice: 45000, attachment: { url: "/images/products/foam.jpg" } },
+  { _id: "suulgalt-khoos", name: "СУУЛГАЛТЫН ХӨӨС", unitPrice: 29700, attachment: { url: "/images/products/foam.jpg" } },
+  { _id: "block-khoos", name: "БЛОКНЫ ХӨӨС", unitPrice: 45000, attachment: { url: "/images/products/foam.jpg" } },
+  { _id: "shurdeg-khoos", name: "ШҮРШДЭГ ХӨӨС", unitPrice: 52000, attachment: { url: "/images/products/foam.jpg" } },
+  { _id: "khoos-tseverlegch", name: "ХӨӨС ЦЭВЭРЛЭГЧ", unitPrice: 18000, attachment: { url: "/images/products/foam.jpg" } },
+  { _id: "khoosnii-buu", name: "ХӨӨСНИЙ БУУ", unitPrice: 75000, attachment: { url: "/images/products/foam.jpg" } },
+  { _id: "khoos-idewkhijulegch", name: "ХӨӨС ИДЭВХИЖҮҮЛЭГЧ", unitPrice: 12000, attachment: { url: "/images/products/foam.jpg" } },
   { _id: "mako2", name: "МАКО 2 ОНГОЙЛТЫН ТҮГЖЭЭ", unitPrice: 85000, attachment: { url: "/images/products/mako2.jpg" } },
   { _id: "kinlong", name: "КИНЛОНГ ТҮГЖЭЭ", unitPrice: 95000, attachment: { url: "/images/products/kinlong.jpg" } },
   { _id: "amalgaa", name: "ХУВАНЦАР АМАЛГАА", unitPrice: 120000, attachment: { url: "/images/products/amalgaa.jpg" } },
@@ -20,7 +24,7 @@ const MOCK_PRODUCTS: Product[] = [
   { _id: "epdm", name: "EPDM РЕЗИН", unitPrice: 65000, attachment: { url: "/images/products/epdm.jpg" } },
 ];
 
-const CATEGORIES = ["Бүгд", "Түгжээ", "Хуванцар", "Ус чийг тусгаарлагч", "Резин"];
+const CATEGORIES = ["Бүгд", "Хөөс", "Түгжээ", "Хуванцар", "Ус чийг тусгаарлагч", "Резин"];
 
 export default function ProductsPage() {
   const t = useTranslations();
@@ -30,8 +34,10 @@ export default function ProductsPage() {
 
   const filtered = MOCK_PRODUCTS.filter((p) => {
     const matchesSearch = p.name?.toLowerCase().includes(searchValue.toLowerCase());
+    const nameLower = p.name?.toLowerCase() || "";
     const matchesCategory =
       selectedCategory === "Бүгд" ||
+      (selectedCategory === "Хөөс" && nameLower.includes("хөөс")) ||
       (selectedCategory === "Түгжээ" && p.name?.includes("ТҮГЖЭЭ")) ||
       (selectedCategory === "Хуванцар" && p.name?.includes("ХУВАНЦАР")) ||
       (selectedCategory === "Ус чийг тусгаарлагч" && p.name?.includes("УС")) ||
