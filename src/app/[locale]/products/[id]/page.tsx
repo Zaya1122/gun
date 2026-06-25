@@ -31,7 +31,7 @@ const MOCK_PRODUCTS: Record<string, { _id: string; name: string; unitPrice: numb
   "suulgalt-khoos": { _id: "suulgalt-khoos", name: "СУУЛГАЛТЫН ХӨӨС", unitPrice: 29700, description: "Цонхны суулгалтын дулаан тусгаарлагч хөөс." },
   "block-khoos": { _id: "block-khoos", name: "БЛОКНЫ ХӨӨС", unitPrice: 45000, description: "Блокон дулаан тусгаарлагч хөөс.", attachment: { url: "/images/products/block-foam.jpg" } },
   "shurdeg-khoos": { _id: "shurdeg-khoos", name: "ШҮРШДЭГ ХӨӨС", unitPrice: 52000, description: "Шүршдэг хөөс — хөндий зайг дулаан тусгаарлана." },
-  "khoos-tseverlegch": { _id: "khoos-tseverlegch", name: "ХӨӨС ЦЭВЭРЛЭГЧ", unitPrice: 18000, description: "Хөөс болон наалдсан бохирдлыг хялбар цэвэрлэнэ." },
+  "khoos-tseverlegch": { _id: "khoos-tseverlegch", name: "ХӨӨС ЦЭВЭРЛЭГЧ", unitPrice: 18000, description: "Хөөс болон наалдсан бохирдлыг хялбар цэвэрлэнэ.", attachment: { url: "/images/products/foam-cleaner.jpg" } },
   "khoosnii-buu": { _id: "khoosnii-buu", name: "ХӨӨСНИЙ БУУ", unitPrice: 75000, description: "Мөнгөн ууттай хөөсний буу." },
   "khoos-idewkhijulegch": { _id: "khoos-idewkhijulegch", name: "ХӨӨС ИДЭВХИЖҮҮЛЭГЧ", unitPrice: 12000, description: "Хөөс бэлтгэх, идэвхижүүлэх туслах бодис." },
   mako2: { _id: "mako2", name: "МАКО 2 ОНГОЙЛТЫН ТҮГЖЭЭ", unitPrice: 85000, description: "Мако брендын 2 онгойлтын түгжээ." },
