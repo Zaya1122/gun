@@ -8,6 +8,7 @@ import { useAuth } from "@/lib/auth/AuthContext";
 import { cartItemsAtom } from "@/store/cart.store";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import Image from "@/components/common/Image";
 import { Menu, ShoppingBag, User, Heart } from "lucide-react";
 
 export function Header() {
@@ -28,7 +29,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background">
       <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-10">
-        <Link href="/" className="text-[20px] font-normal uppercase tracking-[4px]">
+        <Link href="/" className="flex items-center gap-3 text-[20px] font-normal uppercase tracking-[4px] text-[#0077c8]">
+          <Image src="/images/logo.png" alt="Гэр Групп ХХК" width={40} height={40} className="object-contain" />
           Гэр Групп ХХК
         </Link>
 
