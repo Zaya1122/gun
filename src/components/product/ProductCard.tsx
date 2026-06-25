@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { useAtom } from "jotai";
 import { Link } from "@/i18n/routing";
 import { cartItemsAtom } from "@/store/cart.store";
@@ -9,7 +10,7 @@ import Image from "@/components/common/Image";
 import { Button } from "@/components/ui/button";
 import type { Product } from "@/graphql/ecommerce/queries/product";
 
-export function ProductCard({ product }: { product: Product }) {
+export function ProductCard({ product, index = 0 }: { product: Product; index?: number }) {
   const [cartItems, setCartItems] = useAtom(cartItemsAtom);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -40,33 +41,41 @@ export function ProductCard({ product }: { product: Product }) {
   };
 
   return (
-    <Link
-      href={`/products/${product._id}`}
-      className="group flex flex-col gap-3"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.35, ease: "easeOut", delay: index * 0.05 }}
     >
-      <div className="relative aspect-[3/4] overflow-hidden bg-muted">
-        <Image
-          src={product.attachment?.url}
-          alt={product.name || ""}
-          fill
-          className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-        />
-        <div
-          className={`absolute bottom-0 left-0 right-0 flex justify-center p-3 transition-transform duration-300 ${
-            isHovered ? "translate-y-0" : "translate-y-full"
-          }`}
-        >
-          <Button onClick={addToCart} size="sm" className="w-full">
-            Сагсанд нэмэх
-          </Button>
+      <Link
+        href={`/products/${product._id}`}
+        className="group flex flex-col gap-3"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className="relative aspect-[3/4] overflow-hidden bg-muted">
+          <Image
+            src={product.attachment?.url}
+            alt={product.name || ""}
+            fill
+            className="object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+          />
+          <motion.div
+            initial={false}
+            animate={{ y: isHovered ? 0 : "100%" }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="absolute bottom-0 left-0 right-0 flex justify-center p-3"
+          >
+            <Button onClick={addToCart} size="sm" className="w-full">
+              Сагсанд нэмэх
+            </Button>
+          </motion.div>
         </div>
-      </div>
-      <div className="flex flex-col gap-1">
-        <p className="text-[13px]">{product.name}</p>
-        <p className="text-[13px] text-muted-foreground">{formatPrice(product.unitPrice)}</p>
-      </div>
-    </Link>
+        <div className="flex flex-col gap-1">
+          <p className="text-[13px]">{product.name}</p>
+          <p className="text-[13px] text-muted-foreground">{formatPrice(product.unitPrice)}</p>
+        </div>
+      </Link>
+    </motion.div>
   );
 }
