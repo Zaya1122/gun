@@ -33,7 +33,7 @@ const MOCK_PRODUCTS: Record<string, { _id: string; name: string; unitPrice: numb
   "shurdeg-khoos": { _id: "shurdeg-khoos", name: "ШҮРШДЭГ ХӨӨС", unitPrice: 52000, description: "Шүршдэг хөөс — хөндий зайг дулаан тусгаарлана." },
   "khoos-tseverlegch": { _id: "khoos-tseverlegch", name: "ХӨӨС ЦЭВЭРЛЭГЧ", unitPrice: 18000, description: "Хөөс болон наалдсан бохирдлыг хялбар цэвэрлэнэ.", attachment: { url: "/images/products/foam-cleaner.jpg" } },
   "khoosnii-buu": { _id: "khoosnii-buu", name: "ХӨӨСНИЙ БУУ", unitPrice: 75000, description: "Мөнгөн ууттай хөөсний буу." },
-  "khoos-idewkhijulegch": { _id: "khoos-idewkhijulegch", name: "ХӨӨС ИДЭВХИЖҮҮЛЭГЧ", unitPrice: 12000, description: "Хөөс бэлтгэх, идэвхижүүлэх туслах бодис." },
+  "khoos-idewkhijulegch": { _id: "khoos-idewkhijulegch", name: "ХӨӨС ИДЭВХИЖҮҮЛЭГЧ", unitPrice: 12000, description: "Хөөс бэлтгэх, идэвхижүүлэх туслах бодис.", attachment: { url: "/images/products/foam-activator.jpg" } },
   mako2: { _id: "mako2", name: "МАКО 2 ОНГОЙЛТЫН ТҮГЖЭЭ", unitPrice: 85000, description: "Мако брендын 2 онгойлтын түгжээ." },
   kinlong: { _id: "kinlong", name: "КИНЛОНГ ТҮГЖЭЭ", unitPrice: 95000, description: "Кинлонг брендын чанартай түгжээ." },
   amalgaa: { _id: "amalgaa", name: "ХУВАНЦАР АМАЛГАА", unitPrice: 120000, description: "Хуванцар цонхны амалгаа." },
