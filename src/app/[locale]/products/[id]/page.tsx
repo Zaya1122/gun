@@ -24,6 +24,7 @@ const PRODUCT_OPTIONS = [
 
 const MOCK_PRODUCTS: Record<string, { _id: string; name: string; unitPrice: number; description: string; attachment?: { url: string } }> = {
   foam: { _id: "foam", name: "ХӨӨС", unitPrice: 29700, description: "Цонхны дулаан тусгаарлагч хөөс." },
+  "block-foam": { _id: "block-foam", name: "БЛОКНЫ ХӨӨС", unitPrice: 45000, description: "Блокон дулаан тусгаарлагч хөөс." },
   mako2: { _id: "mako2", name: "МАКО 2 ОНГОЙЛТЫН ТҮГЖЭЭ", unitPrice: 85000, description: "Мако брендын 2 онгойлтын түгжээ." },
   kinlong: { _id: "kinlong", name: "КИНЛОНГ ТҮГЖЭЭ", unitPrice: 95000, description: "Кинлонг брендын чанартай түгжээ." },
   amalgaa: { _id: "amalgaa", name: "ХУВАНЦАР АМАЛГАА", unitPrice: 120000, description: "Хуванцар цонхны амалгаа." },
