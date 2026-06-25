@@ -29,7 +29,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background">
       <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-10">
         <Link href="/" className="text-[20px] font-normal uppercase tracking-[4px]">
-          GUN
+          Гэр Групп ХХК
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
