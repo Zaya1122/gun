@@ -14,8 +14,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Гэр Групп ХХК",
-  description: "Органик даавуу, тогтвортой хөвгүүдийн хувцас",
+  title: "Гэр Групп ХХК — Хуванцар цонхны материалын худалдаа",
+  description: "Хуванцар цонхны үндсэн болон туслах материалын албан ёсны эрхтэй худалдаа",
 };
 
 export function generateStaticParams() {

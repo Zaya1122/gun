@@ -34,10 +34,10 @@ export default function HomePage() {
     <div className="flex flex-col">
       <section className="relative h-[900px] w-full overflow-hidden">
         <Image src="/images/hero.jpg" alt="Гэр Групп ХХК" fill className="object-cover" priority />
-        <div className="absolute inset-0 bg-black/10" />
-        <div className="absolute bottom-28 left-10 flex flex-col gap-3">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+        <div className="absolute bottom-28 left-10 flex max-w-3xl flex-col gap-3">
           <p className="text-[13px] uppercase tracking-wider text-white">{t("hero.label")}</p>
-          <h1 className="text-[120px] font-light uppercase tracking-[12px] text-white">Гэр Групп ХХК</h1>
+          <h1 className="text-[64px] font-light uppercase leading-[1.1] tracking-[6px] text-white">Гэр Групп ХХК</h1>
           <Link
             href="/products"
             className="mt-4 inline-flex border border-white px-6 py-3 text-[13px] uppercase tracking-wider text-white hover:bg-white hover:text-black"
