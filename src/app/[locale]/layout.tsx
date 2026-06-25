@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "GUN — Organic Boys' Clothing",
+  title: "Гэр Групп ХХК",
   description: "Органик даавуу, тогтвортой хөвгүүдийн хувцас",
 };
 

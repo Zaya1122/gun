@@ -1,8 +1,8 @@
-# GUN — Design Handoff
+# Гэр Групп ХХК — Design Handoff
 
 ## Design Summary
 
-GUN is an organic and sustainable boys' clothing ecommerce store for the Mongolian market. The visual direction is editorial minimalism inspired by Zara: a near-binary palette of pure black on pure white with a single stone gray for secondary text, sharp corners everywhere, hairline borders, compact sans-serif typography, and generous whitespace. The interface deliberately recedes so editorial product photography carries the brand experience.
+Гэр Групп ХХК is an organic and sustainable boys' clothing ecommerce store for the Mongolian market. The visual direction is editorial minimalism inspired by Zara: a near-binary palette of pure black on pure white with a single stone gray for secondary text, sharp corners everywhere, hairline borders, compact sans-serif typography, and generous whitespace. The interface deliberately recedes so editorial product photography carries the brand experience.
 
 ## Approved Visual Direction
 

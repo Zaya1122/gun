@@ -33,11 +33,11 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       <section className="relative h-[900px] w-full overflow-hidden">
-        <Image src="/images/hero.jpg" alt="GUN" fill className="object-cover" priority />
+        <Image src="/images/hero.jpg" alt="Гэр Групп ХХК" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-black/10" />
         <div className="absolute bottom-28 left-10 flex flex-col gap-3">
           <p className="text-[13px] uppercase tracking-wider text-white">{t("hero.label")}</p>
-          <h1 className="text-[120px] font-light uppercase tracking-[12px] text-white">GUN</h1>
+          <h1 className="text-[120px] font-light uppercase tracking-[12px] text-white">Гэр Групп ХХК</h1>
           <Link
             href="/products"
             className="mt-4 inline-flex border border-white px-6 py-3 text-[13px] uppercase tracking-wider text-white hover:bg-white hover:text-black"

@@ -8,8 +8,8 @@ export async function Footer() {
     <footer className="w-full border-t border-border bg-background">
       <div className="mx-auto flex max-w-[1440px] flex-col gap-10 px-10 py-16 lg:flex-row lg:justify-between">
         <div className="flex flex-col gap-4">
-          <Link href="/" className="text-[18px] font-normal uppercase tracking-[4px]">
-            GUN
+          <Link href="/" className="text-[18px] font-normal uppercase tracking-[4px] text-[#0077c8]">
+            Гэр Групп ХХК
           </Link>
           <p className="max-w-xs text-[13px] text-muted-foreground">{t("footer.tagline")}</p>
         </div>
@@ -37,7 +37,7 @@ export async function Footer() {
 
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-between gap-2 px-10 py-6 lg:flex-row">
-          <p className="text-[12px] text-muted-foreground">© {new Date().getFullYear()} GUN. {t("footer.rights")}</p>
+          <p className="text-[12px] text-muted-foreground">© {new Date().getFullYear()} Гэр Групп ХХК. {t("footer.rights")}</p>
         </div>
       </div>
     </footer>

@@ -34,7 +34,7 @@ export default async function ContactPage() {
           </div>
           <div className="flex flex-col gap-2">
             <span className="text-[11px] uppercase text-muted-foreground">{t("contact.email")}</span>
-            <span className="text-[15px]">hello@gun.mn</span>
+            <span className="text-[15px]">hello@gergroup.mn</span>
           </div>
           <div className="flex flex-col gap-2">
             <span className="text-[11px] uppercase text-muted-foreground">{t("contact.phone")}</span>
