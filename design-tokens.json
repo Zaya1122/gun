@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "siteName": "gun",
+    "visualDirection": "editorial-minimal",
+    "motionLevel": 1,
+    "defaultLocale": "mn",
+    "locales": ["mn"]
+  },
+  "colors": {
+    "brand": {
+      "primary": "#000000",
+      "primaryForeground": "#ffffff"
+    },
+    "neutral": {
+      "canvas": "#ffffff",
+      "ink": "#000000",
+      "stone": "#757575"
+    },
+    "semantic": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "card": "#ffffff",
+      "cardForeground": "#000000",
+      "popover": "#ffffff",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#ffffff",
+      "secondary": "#ffffff",
+      "secondaryForeground": "#000000",
+      "muted": "#f5f5f5",
+      "mutedForeground": "#757575",
+      "accent": "#f5f5f5",
+      "accentForeground": "#000000",
+      "border": "#000000",
+      "input": "#000000",
+      "ring": "#000000",
+      "success": "#000000",
+      "warning": "#757575",
+      "destructive": "#000000"
+    }
+  },
+  "typography": {
+    "families": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
+    },
+    "scale": {
+      "caption": { "size": "11px", "lineHeight": 1.5 },
+      "body-sm": { "size": "12px", "lineHeight": 1.5 },
+      "body": { "size": "13px", "lineHeight": 1.5 },
+      "body-lg": { "size": "15px", "lineHeight": 1.5 },
+      "heading-sm": { "size": "16px", "lineHeight": 1.5 },
+      "heading-md": { "size": "28px", "lineHeight": 1.2 },
+      "heading-xl": { "size": "56px", "lineHeight": 1.0 },
+      "display": { "size": "120px", "lineHeight": 0.95 }
+    }
+  },
+  "spacing": {
+    "scale": {
+      "4": "4px",
+      "12": "12px",
+      "16": "16px",
+      "20": "20px",
+      "24": "24px",
+      "32": "32px",
+      "48": "48px",
+      "112": "112px"
+    },
+    "layout": {
+      "pageMaxWidth": "1440px",
+      "sectionGap": "48px",
+      "cardPadding": "24px",
+      "elementGap": "20px",
+      "outerPadding": "40px",
+      "outerPaddingWide": "112px"
+    }
+  },
+  "radius": {
+    "all": "0px",
+    "cards": "0px",
+    "badges": "0px",
+    "inputs": "0px",
+    "buttons": "0px"
+  },
+  "shadows": {
+    "none": "none"
+  },
+  "motion": {
+    "duration": {
+      "fast": "150ms",
+      "normal": "250ms",
+      "slow": "400ms"
+    },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "in": "cubic-bezier(0.4, 0, 1, 1)",
+      "out": "cubic-bezier(0, 0, 0.2, 1)"
+    },
+    "spring_configs": {},
+    "variants": {
+      "fadeIn": { "initial": { "opacity": 0 }, "animate": { "opacity": 1 }, "transition": { "duration": 0.25 } },
+      "hoverScale": { "whileHover": { "scale": 1.02 }, "transition": { "duration": 0.15 } }
+    },
+    "gsap_configs": {}
+  }
+}

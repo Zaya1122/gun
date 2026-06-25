@@ -1,0 +1,39 @@
+{
+  "motion_level": 1,
+  "visual_direction": "editorial-minimal",
+  "packages": [
+    "framer-motion",
+    "clsx",
+    "tailwind-merge",
+    "lucide-react",
+    "next-themes"
+  ],
+  "shadcn_components": [],
+  "custom_components": [
+    "Header",
+    "Footer",
+    "Hero",
+    "CategoryCard",
+    "ProductCard",
+    "TestimonialCard",
+    "ContactForm",
+    "ProductGrid",
+    "ProductDetail",
+    "CartLineItem",
+    "OrderSummary",
+    "CheckoutForm",
+    "AuthForm",
+    "ProfileForm",
+    "OrderHistory",
+    "WishlistCard"
+  ],
+  "animation_config": {
+    "core_library": "framer-motion",
+    "scroll_library": null,
+    "text_animation": "none",
+    "page_transition": "none",
+    "ambient_system": "css",
+    "micro_interactions": "framer-motion",
+    "gsap_plugins": []
+  }
+}
