@@ -47,11 +47,11 @@ export default function HomePage() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="absolute bottom-28 left-10 flex max-w-3xl flex-col gap-3"
         >
-          <p className="text-[13px] uppercase tracking-wider text-white">{t("hero.label")}</p>
-          <h1 className="text-[64px] font-light uppercase leading-[1.1] tracking-[6px] text-white">Гэр Групп ХХК</h1>
+          <p className="text-[10px] uppercase tracking-wider text-white">{t("hero.label")}</p>
+          <h1 className="text-[51px] font-light uppercase leading-[1.1] tracking-[5px] text-white">Гэр Групп ХХК</h1>
           <Link
             href="/products"
-            className="mt-4 inline-flex border border-white px-6 py-3 text-[13px] uppercase tracking-wider text-white transition-colors duration-200 hover:bg-white hover:text-black"
+            className="mt-4 inline-flex border border-white px-5 py-2 text-[10px] uppercase tracking-wider text-white transition-colors duration-200 hover:bg-white hover:text-black"
           >
             {t("hero.cta")}
           </Link>
