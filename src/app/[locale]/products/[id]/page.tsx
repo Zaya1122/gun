@@ -42,6 +42,13 @@ interface MockProduct {
   variants?: ProductVariant[];
 }
 
+const AMALGAA_PRODUCTS: Record<string, MockProduct> = {
+  "amalgaa-45": { _id: "amalgaa-45", name: "ХУВАНЦАР АМАЛГАА 45СМ", unitPrice: 95000, description: "Хуванцар цонхны амалгаа — 45см өргөн.", attachment: { url: "/images/products/amalgaa.jpg" } },
+  "amalgaa-60": { _id: "amalgaa-60", name: "ХУВАНЦАР АМАЛГАА 60СМ", unitPrice: 120000, description: "Хуванцар цонхны амалгаа — 60см өргөн.", attachment: { url: "/images/products/amalgaa.jpg" } },
+  "amalgaa-zam": { _id: "amalgaa-zam", name: "АМАЛГААНЫ ЗАМ", unitPrice: 35000, description: "Хуванцар цонхны амалгааны зам.", attachment: { url: "/images/products/amalgaa.jpg" } },
+  "amalgaa-tag": { _id: "amalgaa-tag", name: "АМАЛГААНЫ ТАГ", unitPrice: 18000, description: "Хуванцар цонхны амалгааны таг.", attachment: { url: "/images/products/amalgaa.jpg" } },
+};
+
 const TAVTSAN_PRODUCTS: Record<string, MockProduct> = {
   "tavtsan-20": { _id: "tavtsan-20", name: "ХУВАНЦАР ТАВЦАН 20СМ", unitPrice: 120000, description: "Хуванцар цонхны тавцан — 20см өргөн.", attachment: { url: "/images/products/tavtsan.jpg" } },
   "tavtsan-25": { _id: "tavtsan-25", name: "ХУВАНЦАР ТАВЦАН 25СМ", unitPrice: 135000, description: "Хуванцар цонхны тавцан — 25см өргөн.", attachment: { url: "/images/products/tavtsan.jpg" } },
@@ -65,6 +72,7 @@ const MOCK_PRODUCTS: Record<string, MockProduct> = {
   amalgaa: { _id: "amalgaa", name: "ХУВАНЦАР АМАЛГАА", unitPrice: 120000, description: "Хуванцар цонхны амалгаа." },
   "us-uur": { _id: "us-uur", name: "УС УУР ЧИЙГ ТУСГААРЛАГЧ", unitPrice: 220000, description: "Ус, чийг, уур тусгаарлагч материал." },
   epdm: { _id: "epdm", name: "EPDM РЕЗИН", unitPrice: 65000, description: "EPDM резинэн тусгаарлагч." },
+  ...AMALGAA_PRODUCTS,
   ...TAVTSAN_PRODUCTS,
 };
 
