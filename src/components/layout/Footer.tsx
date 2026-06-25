@@ -30,8 +30,22 @@ export async function Footer() {
 
         <div className="flex flex-col gap-4">
           <span className="text-[11px] uppercase text-muted-foreground">{t("footer.social")}</span>
-          <span className="text-[13px] hover:text-muted-foreground">Instagram</span>
-          <span className="text-[13px] hover:text-muted-foreground">Facebook</span>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[13px] hover:text-muted-foreground"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.facebook.com/GerGroupLTD"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[13px] hover:text-muted-foreground"
+          >
+            Facebook
+          </a>
         </div>
       </div>
 
