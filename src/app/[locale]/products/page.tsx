@@ -34,7 +34,7 @@ const MOCK_PRODUCTS: Product[] = [
   { _id: "epdm", name: "EPDM РЕЗИН", unitPrice: 65000, attachment: { url: "/images/products/epdm.jpg" } },
 ];
 
-const CATEGORIES = ["Бүгд", "Хөөс", "Түгжээ", "Хуванцар", "Ус чийг тусгаарлагч", "Резин"];
+const CATEGORIES = ["Бүгд", "Хөөс", "Түгжээ", "Хуванцар тавцан", "Хуванцар амалгаа", "Ус чийг тусгаарлагч", "Резин"];
 
 export default function ProductsPage() {
   const t = useTranslations();
@@ -49,7 +49,8 @@ export default function ProductsPage() {
       selectedCategory === "Бүгд" ||
       (selectedCategory === "Хөөс" && nameLower.includes("хөөс")) ||
       (selectedCategory === "Түгжээ" && p.name?.includes("ТҮГЖЭЭ")) ||
-      (selectedCategory === "Хуванцар" && p.name?.includes("ХУВАНЦАР")) ||
+      (selectedCategory === "Хуванцар тавцан" && p.name?.includes("ТАВЦАН")) ||
+      (selectedCategory === "Хуванцар амалгаа" && (p.name?.includes("АМАЛГАА") || p.name?.includes("АМАЛГААНЫ"))) ||
       (selectedCategory === "Ус чийг тусгаарлагч" && p.name?.includes("УС")) ||
       (selectedCategory === "Резин" && p.name?.includes("РЕЗИН"));
     return matchesSearch && matchesCategory;
