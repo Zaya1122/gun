@@ -30,11 +30,15 @@ const MOCK_PRODUCTS: Product[] = [
   { _id: "tavtsan-45", name: "ХУВАНЦАР ТАВЦАН 45СМ", unitPrice: 195000, attachment: { url: "/images/products/tavtsan.jpg" } },
   { _id: "tavtsan-50", name: "ХУВАНЦАР ТАВЦАН 50СМ", unitPrice: 210000, attachment: { url: "/images/products/tavtsan.jpg" } },
   { _id: "tavtsan-60", name: "ХУВАНЦАР ТАВЦАН 60СМ", unitPrice: 240000, attachment: { url: "/images/products/tavtsan.jpg" } },
-  { _id: "us-uur", name: "УС УУР ЧИЙГ ТУСГААРЛАГЧ", unitPrice: 220000, attachment: { url: "/images/products/us-uur.jpg" } },
-  { _id: "epdm", name: "EPDM РЕЗИН", unitPrice: 65000, attachment: { url: "/images/products/epdm.jpg" } },
+  { _id: "us-uur-inside", name: "УС УУР ЧИЙГ ТУСГААРЛАГЧ INSIDE", unitPrice: 180000, attachment: { url: "/images/products/us-uur.jpg" } },
+  { _id: "us-uur-outside", name: "УС УУР ЧИЙГ ТУСГААРЛАГЧ OUTSIDE", unitPrice: 240000, attachment: { url: "/images/products/us-uur.jpg" } },
+  { _id: "epdm-rm228", name: "EPDM РЕЗИН РМ-228", unitPrice: 65000, attachment: { url: "/images/products/epdm.jpg" } },
+  { _id: "epdm-pru05016", name: "EPDM РЕЗИН ПРУ-05016", unitPrice: 72000, attachment: { url: "/images/products/epdm.jpg" } },
+  { _id: "epdm-rm124", name: "EPDM РЕЗИН РМ-124", unitPrice: 68000, attachment: { url: "/images/products/epdm.jpg" } },
+  { _id: "epdm-rm050", name: "EPDM РЕЗИН РМ-050", unitPrice: 55000, attachment: { url: "/images/products/epdm.jpg" } },
 ];
 
-const CATEGORIES = ["Бүгд", "Хөөс", "Түгжээ", "Хуванцар тавцан", "Хуванцар амалгаа", "Ус чийг тусгаарлагч", "Резин"];
+const CATEGORIES = ["Бүгд", "Хөөс", "Түгжээ", "Хуванцар тавцан", "Хуванцар амалгаа", "Ус уур чийг тусгаарлагч", "Резин"];
 
 export default function ProductsPage() {
   const t = useTranslations();
@@ -51,7 +55,7 @@ export default function ProductsPage() {
       (selectedCategory === "Түгжээ" && p.name?.includes("ТҮГЖЭЭ")) ||
       (selectedCategory === "Хуванцар тавцан" && p.name?.includes("ТАВЦАН")) ||
       (selectedCategory === "Хуванцар амалгаа" && (p.name?.includes("АМАЛГАА") || p.name?.includes("АМАЛГААНЫ"))) ||
-      (selectedCategory === "Ус чийг тусгаарлагч" && p.name?.includes("УС")) ||
+      (selectedCategory === "Ус уур чийг тусгаарлагч" && p.name?.includes("УС УУР ЧИЙГ ТУСГААРЛАГЧ")) ||
       (selectedCategory === "Резин" && p.name?.includes("РЕЗИН"));
     return matchesSearch && matchesCategory;
   });
