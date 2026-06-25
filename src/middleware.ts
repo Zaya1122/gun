@@ -4,10 +4,10 @@ import { routing } from "./i18n/routing";
 
 const handleI18nRouting = createMiddleware(routing);
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   return handleI18nRouting(request);
 }
 
 export const config = {
-  matcher: ["/((?!_next|_vercel|.*\\..*).*)"],
+  matcher: ["/", "/(mn)/:path*"],
 };
