@@ -41,16 +41,16 @@ interface MockProduct {
   variants?: ProductVariant[];
 }
 
-const TAVTSAN_VARIANTS: ProductVariant[] = [
-  { label: "20см өргөн", price: 120000 },
-  { label: "25см өргөн", price: 135000 },
-  { label: "30см өргөн", price: 150000 },
-  { label: "35см өргөн", price: 165000 },
-  { label: "40см өргөн", price: 180000 },
-  { label: "45см өргөн", price: 195000 },
-  { label: "50см өргөн", price: 210000 },
-  { label: "60см өргөн", price: 240000 },
-];
+const TAVTSAN_PRODUCTS: Record<string, MockProduct> = {
+  "tavtsan-20": { _id: "tavtsan-20", name: "ХУВАНЦАР ТАВЦАН 20СМ", unitPrice: 120000, description: "Хуванцар цонхны тавцан — 20см өргөн.", attachment: { url: "/images/products/tavtsan.jpg" } },
+  "tavtsan-25": { _id: "tavtsan-25", name: "ХУВАНЦАР ТАВЦАН 25СМ", unitPrice: 135000, description: "Хуванцар цонхны тавцан — 25см өргөн.", attachment: { url: "/images/products/tavtsan.jpg" } },
+  "tavtsan-30": { _id: "tavtsan-30", name: "ХУВАНЦАР ТАВЦАН 30СМ", unitPrice: 150000, description: "Хуванцар цонхны тавцан — 30см өргөн.", attachment: { url: "/images/products/tavtsan.jpg" } },
+  "tavtsan-35": { _id: "tavtsan-35", name: "ХУВАНЦАР ТАВЦАН 35СМ", unitPrice: 165000, description: "Хуванцар цонхны тавцан — 35см өргөн.", attachment: { url: "/images/products/tavtsan.jpg" } },
+  "tavtsan-40": { _id: "tavtsan-40", name: "ХУВАНЦАР ТАВЦАН 40СМ", unitPrice: 180000, description: "Хуванцар цонхны тавцан — 40см өргөн.", attachment: { url: "/images/products/tavtsan.jpg" } },
+  "tavtsan-45": { _id: "tavtsan-45", name: "ХУВАНЦАР ТАВЦАН 45СМ", unitPrice: 195000, description: "Хуванцар цонхны тавцан — 45см өргөн.", attachment: { url: "/images/products/tavtsan.jpg" } },
+  "tavtsan-50": { _id: "tavtsan-50", name: "ХУВАНЦАР ТАВЦАН 50СМ", unitPrice: 210000, description: "Хуванцар цонхны тавцан — 50см өргөн.", attachment: { url: "/images/products/tavtsan.jpg" } },
+  "tavtsan-60": { _id: "tavtsan-60", name: "ХУВАНЦАР ТАВЦАН 60СМ", unitPrice: 240000, description: "Хуванцар цонхны тавцан — 60см өргөн.", attachment: { url: "/images/products/tavtsan.jpg" } },
+};
 
 const MOCK_PRODUCTS: Record<string, MockProduct> = {
   "suulgalt-khoos": { _id: "suulgalt-khoos", name: "СУУЛГАЛТЫН ХӨӨС", unitPrice: 29700, description: "Цонхны суулгалтын дулаан тусгаарлагч хөөс." },
@@ -62,9 +62,9 @@ const MOCK_PRODUCTS: Record<string, MockProduct> = {
   mako2: { _id: "mako2", name: "МАКО 2 ОНГОЙЛТЫН ТҮГЖЭЭ", unitPrice: 85000, description: "Мако брендын 2 онгойлтын түгжээ." },
   kinlong: { _id: "kinlong", name: "КИНЛОНГ ТҮГЖЭЭ", unitPrice: 95000, description: "Кинлонг брендын чанартай түгжээ." },
   amalgaa: { _id: "amalgaa", name: "ХУВАНЦАР АМАЛГАА", unitPrice: 120000, description: "Хуванцар цонхны амалгаа." },
-  tavtsan: { _id: "tavtsan", name: "ХУВАНЦАР ТАВЦАН", unitPrice: 180000, description: "Хуванцар цонхны тавцан — өргөн сонголтоор.", variants: TAVTSAN_VARIANTS },
   "us-uur": { _id: "us-uur", name: "УС УУР ЧИЙГ ТУСГААРЛАГЧ", unitPrice: 220000, description: "Ус, чийг, уур тусгаарлагч материал." },
   epdm: { _id: "epdm", name: "EPDM РЕЗИН", unitPrice: 65000, description: "EPDM резинэн тусгаарлагч." },
+  ...TAVTSAN_PRODUCTS,
 };
 
 export default function ProductDetailPage({
@@ -75,14 +75,10 @@ export default function ProductDetailPage({
   const t = useTranslations();
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
-  const [selectedVariant, setSelectedVariant] = useState<ProductVariant | null>(null);
   const [selectedOptions, setSelectedOptions] = useState<Record<string, string>>({});
 
   const { id: productId } = params as unknown as { id: string };
   const product = MOCK_PRODUCTS[productId];
-
-  const currentPrice = selectedVariant?.price ?? product?.unitPrice ?? 0;
-  const displayName = selectedVariant ? `${product?.name} (${selectedVariant.label})` : product?.name;
 
   const [, setCartItems] = useAtom(cartItemsAtom);
   const [, setWishlistItems] = useAtom(wishlistItemsAtom);
@@ -90,21 +86,20 @@ export default function ProductDetailPage({
 
   const addToCart = () => {
     if (!product) return;
-    const itemId = selectedVariant ? `${product._id}__${selectedVariant.label}` : product._id;
     setCartItems((prev) => {
-      const existing = prev.find((item) => item.productId === itemId);
+      const existing = prev.find((item) => item.productId === product._id);
       if (existing) {
         return prev.map((item) =>
-          item.productId === itemId ? { ...item, count: item.count + quantity } : item
+          item.productId === product._id ? { ...item, count: item.count + quantity } : item
         );
       }
       return [
         ...prev,
         {
-          productId: itemId,
+          productId: product._id,
           count: quantity,
-          unitPrice: currentPrice,
-          productName: displayName,
+          unitPrice: product.unitPrice || 0,
+          productName: product.name,
           productImgUrl: product.attachment?.url,
         },
       ];
@@ -113,15 +108,14 @@ export default function ProductDetailPage({
 
   const addToWishlist = () => {
     if (!product || !user?._id) return;
-    const itemId = selectedVariant ? `${product._id}__${selectedVariant.label}` : product._id;
     setWishlistItems((prev) => {
-      if (prev.find((item) => item.productId === itemId)) return prev;
+      if (prev.find((item) => item.productId === product._id)) return prev;
       return [
         ...prev,
         {
-          productId: itemId,
-          productName: displayName,
-          unitPrice: currentPrice,
+          productId: product._id,
+          productName: product.name,
+          unitPrice: product.unitPrice,
           productImgUrl: product.attachment?.url,
         },
       ];
@@ -158,12 +152,7 @@ export default function ProductDetailPage({
           className="flex flex-col gap-6"
         >
           <h1 className="text-[28px] font-normal">{product.name}</h1>
-          <p className="text-[24px] font-light">{formatPrice(currentPrice)}</p>
-          {selectedVariant && (
-            <p className="text-[13px] text-muted-foreground">
-              Сонгосон: {selectedVariant.label}
-            </p>
-          )}
+          <p className="text-[24px] font-light">{formatPrice(product.unitPrice)}</p>
           <p className="text-[13px] leading-relaxed text-muted-foreground">{product.description}</p>
 
           <div className="flex items-center gap-4">
@@ -183,54 +172,30 @@ export default function ProductDetailPage({
           </div>
 
           <div className="flex flex-col gap-4">
-            <p className="text-[11px] uppercase tracking-wider text-muted-foreground">
-              {product.variants ? "Өргөн сонгох" : "Сонголтууд"}
-            </p>
+            <p className="text-[11px] uppercase tracking-wider text-muted-foreground">Сонголтууд</p>
             <div className="flex flex-wrap gap-2">
-              {product.variants
-                ? product.variants.map((variant) => {
-                    const isSelected = selectedVariant?.label === variant.label;
-                    return (
-                      <button
-                        key={variant.label}
-                        type="button"
-                        onClick={() =>
-                          setSelectedVariant((prev) =>
-                            prev?.label === variant.label ? null : variant
-                          )
-                        }
-                        className={`border px-4 py-2 text-[12px] uppercase tracking-wider transition-colors duration-200 ${
-                          isSelected
-                            ? "border-foreground bg-foreground text-background"
-                            : "border-border bg-background text-foreground hover:bg-muted"
-                        }`}
-                      >
-                        {variant.label}
-                      </button>
-                    );
-                  })
-                : PRODUCT_OPTIONS.map((option) => {
-                    const isSelected = selectedOptions[product._id] === option;
-                    return (
-                      <button
-                        key={option}
-                        type="button"
-                        onClick={() =>
-                          setSelectedOptions((prev) => ({
-                            ...prev,
-                            [product._id]: isSelected ? "" : option,
-                          }))
-                        }
-                        className={`border px-4 py-2 text-[12px] uppercase tracking-wider transition-colors duration-200 ${
-                          isSelected
-                            ? "border-foreground bg-foreground text-background"
-                            : "border-border bg-background text-foreground hover:bg-muted"
-                        }`}
-                      >
-                        {option}
-                      </button>
-                    );
-                  })}
+              {PRODUCT_OPTIONS.map((option) => {
+                const isSelected = selectedOptions[product._id] === option;
+                return (
+                  <button
+                    key={option}
+                    type="button"
+                    onClick={() =>
+                      setSelectedOptions((prev) => ({
+                        ...prev,
+                        [product._id]: isSelected ? "" : option,
+                      }))
+                    }
+                    className={`border px-4 py-2 text-[12px] uppercase tracking-wider transition-colors duration-200 ${
+                      isSelected
+                        ? "border-foreground bg-foreground text-background"
+                        : "border-border bg-background text-foreground hover:bg-muted"
+                    }`}
+                  >
+                    {option}
+                  </button>
+                );
+              })}
             </div>
           </div>
 
