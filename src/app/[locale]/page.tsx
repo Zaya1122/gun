@@ -40,22 +40,6 @@ export default function HomePage() {
     <div className="flex flex-col">
       <section className="relative h-[600px] w-full overflow-hidden">
         <Image src="/images/hero.jpg" alt="Гэр Групп ХХК" fill className="object-cover" priority />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="absolute bottom-28 left-10 flex max-w-3xl flex-col gap-3"
-        >
-          <p className="text-[10px] uppercase tracking-wider text-white">{t("hero.label")}</p>
-          <h1 className="text-[51px] font-light uppercase leading-[1.1] tracking-[5px] text-white">Гэр Групп ХХК</h1>
-          <Link
-            href="/products"
-            className="mt-4 inline-flex border border-white px-5 py-2 text-[10px] uppercase tracking-wider text-white transition-colors duration-200 hover:bg-white hover:text-black"
-          >
-            {t("hero.cta")}
-          </Link>
-        </motion.div>
       </section>
 
       <motion.section
