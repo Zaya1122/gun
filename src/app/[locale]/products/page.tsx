@@ -38,20 +38,18 @@ const MOCK_PRODUCTS: Product[] = [
   { _id: "epdm-rm050", name: "EPDM РЕЗИН РМ-050", unitPrice: 55000, attachment: { url: "/images/products/epdm.jpg" } },
 ];
 
-const CATEGORIES = ["Бүгд", "Хөөс", "Түгжээ", "Хуванцар тавцан", "Хуванцар амалгаа", "Ус уур чийг тусгаарлагч", "Резин"];
+const CATEGORIES = ["Хөөс", "Түгжээ", "Хуванцар тавцан", "Хуванцар амалгаа", "Ус уур чийг тусгаарлагч", "Резин"];
 
 export default function ProductsPage() {
   const t = useTranslations();
   const [searchValue, setSearchValue] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("Бүгд");
+  const [selectedCategory, setSelectedCategory] = useState("Хөөс");
   const [page, setPage] = useState(1);
 
   const filtered = MOCK_PRODUCTS.filter((p) => {
     const matchesSearch = p.name?.toLowerCase().includes(searchValue.toLowerCase());
-    const nameLower = p.name?.toLowerCase() || "";
     const matchesCategory =
-      selectedCategory === "Бүгд" ||
-      (selectedCategory === "Хөөс" && nameLower.includes("хөөс")) ||
+      (selectedCategory === "Хөөс" && p.name?.toLowerCase().includes("хөөс")) ||
       (selectedCategory === "Түгжээ" && p.name?.includes("ТҮГЖЭЭ")) ||
       (selectedCategory === "Хуванцар тавцан" && p.name?.includes("ТАВЦАН")) ||
       (selectedCategory === "Хуванцар амалгаа" && (p.name?.includes("АМАЛГАА") || p.name?.includes("АМАЛГААНЫ"))) ||
