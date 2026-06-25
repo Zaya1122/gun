@@ -32,7 +32,7 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative h-[900px] w-full overflow-hidden">
+      <section className="relative h-[600px] w-full overflow-hidden">
         <Image src="/images/hero.jpg" alt="Гэр Групп ХХК" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         <div className="absolute bottom-28 left-10 flex max-w-3xl flex-col gap-3">
