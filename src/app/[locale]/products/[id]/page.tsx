@@ -11,6 +11,7 @@ import { wishlistItemsAtom } from "@/store/wishlist.store";
 import { formatPrice } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Image from "@/components/common/Image";
+import { ProductReviews } from "@/components/product/ProductReviews";
 
 const PRODUCT_OPTIONS = [
   "СУУЛГАЛТЫН ХӨӨС",
@@ -209,6 +210,8 @@ export default function ProductDetailPage({
           </div>
         </motion.div>
       </div>
+
+      <ProductReviews productId={product._id} />
     </div>
   );
 }
