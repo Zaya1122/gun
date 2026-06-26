@@ -44,6 +44,8 @@ export default function RegisterPage() {
           phone,
           password,
           userType: "customer",
+          clientPortalId: process.env.NEXT_PUBLIC_CLIENT_PORTAL_ID,
+          clientPortalIds: [process.env.NEXT_PUBLIC_CLIENT_PORTAL_ID],
         },
       });
       const { data } = await loginMutation({

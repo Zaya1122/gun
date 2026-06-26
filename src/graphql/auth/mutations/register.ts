@@ -12,6 +12,8 @@ export type ClientPortalUserRegisterInput = {
   lastName?: string;
   userType?: CPUserType;
   code?: string;
+  clientPortalId?: string;
+  clientPortalIds?: string[];
   propertiesData?: Record<string, unknown>;
 };
 
@@ -25,6 +27,8 @@ export const CLIENT_PORTAL_USER_REGISTER = gql`
     $lastName: String
     $userType: CPUserType
     $code: String
+    $clientPortalId: String
+    $clientPortalIds: [String]
     $propertiesData: JSON
   ) {
     clientPortalUserRegister(
@@ -36,6 +40,8 @@ export const CLIENT_PORTAL_USER_REGISTER = gql`
       lastName: $lastName
       userType: $userType
       code: $code
+      clientPortalId: $clientPortalId
+      clientPortalIds: $clientPortalIds
       propertiesData: $propertiesData
     ) {
       _id
