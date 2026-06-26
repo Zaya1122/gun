@@ -20,7 +20,7 @@ const FEATURED_PRODUCTS: Product[] = [
 const CATEGORIES = [
   { name: "Хөөс", slug: "Хөөс", image: "/images/products/foam.jpg" },
   { name: "Түгжээ", slug: "Түгжээ", image: "/images/products/mako2.jpg" },
-  { name: "Хуванцар тавцан", slug: "Хуванцар тавцан", image: "/images/products/tavtsan.jpg" },
+  { name: "Хуванцар тавцан", slug: "Хуванцар тавцан", image: "/images/products/tavtsan-category.jpg" },
   { name: "Хуванцар амалгаа", slug: "Хуванцар амалгаа", image: "/images/products/amalgaa.jpg" },
   { name: "Ус уур чийг тусгаарлагч", slug: "Ус уур чийг тусгаарлагч", image: "/images/products/us-uur.jpg" },
   { name: "Резин", slug: "Резин", image: "/images/products/epdm.jpg" },
