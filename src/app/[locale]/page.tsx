@@ -39,35 +39,6 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative h-[70vh] min-h-[560px] w-full overflow-hidden">
         <Image src="/images/hero.jpg" alt="Гэр Групп ХХК" fill className="object-cover" priority />
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute inset-0 flex items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mx-auto w-full max-w-[1440px] px-10 text-white"
-          >
-            <p className="mb-4 text-[12px] uppercase tracking-[0.2em]">{ t("hero.label") }</p>
-            <h1 className="max-w-2xl text-[42px] font-normal leading-[1.1] md:text-[56px]">
-              {t("home.promoTitle")}
-            </h1>
-            <p className="mt-6 max-w-lg text-[15px] leading-relaxed opacity-90">
-              {t("home.promoText")}
-            </p>
-            <div className="mt-8 flex gap-4">
-              <Button asChild className="px-8 py-4 text-[13px] uppercase tracking-wider">
-                <Link href="/products">{t("home.shopNow")}</Link>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                className="border-white bg-transparent px-8 py-4 text-white hover:bg-white hover:text-foreground text-[13px] uppercase tracking-wider"
-              >
-                <Link href="/contact">{t("home.contact")}</Link>
-              </Button>
-            </div>
-          </motion.div>
-        </div>
       </section>
 
       {/* Trust badges */}
