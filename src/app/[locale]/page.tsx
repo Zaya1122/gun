@@ -23,7 +23,7 @@ const CATEGORIES = [
   { name: "Хуванцар тавцан", slug: "Хуванцар тавцан", image: "/images/products/tavtsan-category.jpg" },
   { name: "Хуванцар амалгаа", slug: "Хуванцар амалгаа", image: "/images/products/amalgaa.jpg" },
   { name: "Ус уур чийг тусгаарлагч", slug: "Ус уур чийг тусгаарлагч", image: "/images/products/us-uur.jpg" },
-  { name: "Резин", slug: "Резин", image: "/images/products/epdm.jpg" },
+  { name: "Резин", slug: "Резин", image: "/images/products/rubber-category.jpg" },
 ];
 
 const sectionVariants = {
